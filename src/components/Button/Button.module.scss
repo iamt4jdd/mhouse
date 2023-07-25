@@ -1,0 +1,115 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 84px;
+    height: 100%;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+
+    + .wrapper {
+        margin-left: 16px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+
+.image + .title,
+.title + .image {
+    margin-left: 8px;
+}
+
+// Button types CSS
+.primary {
+    background-color: rgba(254, 44, 85, 1);
+    color: var(--white);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+    }
+}
+
+.text {
+    border-radius: 0;
+    font-weight: 600;
+    font-size: .9em;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: -0.028px;
+    min-width: 1px;
+    justify-content: flex-start;
+    padding: 8px;
+    color: #fff;
+
+
+    &:hover {
+        color: #eebd00;
+        text-decoration: underline;
+    }
+
+    // &:hover::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-color: #eebd00;
+    //     width: 50px;
+    //     height: 2px;
+    //     top: 93px;
+    // }
+
+}
+
+.image, .icon {
+    width: 32px;
+    text-align: center;
+}
+
+.text-outline {
+    border-color:rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, .03);
+    }
+}
+
+.rounded {
+    border-radius: 999px;
+    color: rgba(22, 24, 35, .75);
+    border-color: rgba(22, 24, 35, .12);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.outline {
+    color: rgba(254, 44, 85, 1);
+    border-color: rgba(254, 44, 85, 1);
+
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);;
+    }
+}
+
+//Button sizes CSS
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 14px 16px;
+    min-width: 140px;
+}
