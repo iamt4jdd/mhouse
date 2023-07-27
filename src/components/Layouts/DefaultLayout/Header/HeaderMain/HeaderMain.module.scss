@@ -1,13 +1,14 @@
 .header-main {
-    background-color: #3a3a3c;
     width: 100%;
     min-height: 70px;
     z-index:1000;
+    font-family: var(--font-family);
+    
 }
 
 .logo {
     width: 150px;
-    height: 70px;
+    height: 150px;
     position: relative;
     left: -38px;
     top: 5px;

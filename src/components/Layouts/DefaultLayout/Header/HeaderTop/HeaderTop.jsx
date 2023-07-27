@@ -1,29 +1,25 @@
-import classNames from "classnames/bind"
-import styles from './HeaderTop.module.scss'
+import classNames from "classnames/bind";
+import styles from "./HeaderTop.module.scss";
 
-import { InnerContainer, IconRenderer } from "~/components"
+import { InnerContainer, IconRenderer } from "~/components";
 
-const cx = classNames.bind(styles)
-
-
+const cx = classNames.bind(styles);
 
 const HeaderTop = () => {
+	return (
+		<>
+			<div className={`${cx("gradient__bg")}`}>
+				<InnerContainer>
+					<span className={cx("hot-line")}>
+						HOTLINE | <strong>0327 853 764</strong>
+					</span>
+					<div className={cx("top-nav-bar")}>
+						<IconRenderer />
+					</div>
+				</InnerContainer>
+			</div>
+		</>
+	);
+};
 
-   
-
-
-    return (
-        <>
-            <div className={`${cx('header-top')}`}>
-                <InnerContainer>
-                    <span className={cx('hot-line')}>HOTLINE | <strong>0327 853 764</strong></span>   
-                    <div className={cx('top-nav-bar')}>
-                        <IconRenderer/>
-                    </div>
-                </InnerContainer>
-            </div>
-        </>
-    )
-}
-
-export default HeaderTop
+export default HeaderTop;
