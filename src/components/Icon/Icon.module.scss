@@ -1,4 +1,7 @@
-.image {
+.icon, .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 28px;
     height: 28px;
     margin: 5px;
@@ -9,10 +12,9 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 3px;
-    fill: #fff;
+    color: #fff;
     border-color: #fff;
     border-width: 1px;
-
-
+    font-size: 18px;
 }
 

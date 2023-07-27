@@ -39,7 +39,7 @@ const Icon = ({
         <>
             <Comp className={classes} {...props}>
                 {image && <img src={image} alt="" className={cx('image')}/>}
-                {icon && <span className={cx('icon')}>{icon}</span>}
+                {icon && <div className={cx('icon')}>{icon}</div>}
             </Comp>
         </>
     )

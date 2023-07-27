@@ -35,8 +35,10 @@ const ContentContainer = ({
                     {type === 'primary' && 
                     <>
                         <div className={cx('title')}><span>{title}</span></div>
-                        {image && <img src={image} alt="" className={cx('image')}/>}
-                        {icon && <span className={cx('icon')}>{icon}</span>}
+                        <div className={cx('section-break')}><span>&nbsp;</span></div>
+                        {image && <div className={cx('image')}><img src={image} alt=""/></div>}
+                        {icon && <div className={cx('icon')}>{icon}</div>}
+                        {children}
                     </>
                     }
                 </div>
