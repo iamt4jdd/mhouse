@@ -10,7 +10,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
-    background-color: var(--white);
+    // background-color: var(--white);
     border: 1px solid transparent;
     user-select: none;
 
@@ -55,11 +55,16 @@
     justify-content: flex-start;
     padding: 8px;
     margin: 0 10px;
-    color: #fff;
+    color: #000;
 
-
+    @keyframes sparkleAnimation {
+        0% { color: #7ed957; }
+        50% { color: #b7eb34; }
+        100% { color: #7ed957; }
+    }
+    
     &:hover {
-        color: #7ed957;
+        animation: sparkleAnimation 1s infinite;
     }
 
     // &:hover::after {
