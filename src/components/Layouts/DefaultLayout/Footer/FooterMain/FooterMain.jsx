@@ -1,4 +1,6 @@
 import classNames from "classnames/bind"
+
+import { InnerContainer, ContentContainer } from "~/components"
 import styles from './FooterMain.module.scss'
 
 const cx = classNames.bind(styles)
@@ -7,7 +9,11 @@ const FooterMain = () => {
     return (
         <>
             <div className={cx('footer-main')}>
-                <h1 className="text-red-700">FooterMain</h1>
+                <InnerContainer type=''>
+                    <ContentContainer title='About us'/>
+                    <ContentContainer title='Contact Information' size='large'/>
+                    <ContentContainer title='Connect with us'/>
+                </InnerContainer>
             </div>
         </>
     )

@@ -11,7 +11,7 @@ const MenuItem = ({ data }) => {
 
     return (
         <>
-            <Button className={cx('menu-item')} icon={data.icon} to={data.to} type='text'>
+            <Button className={cx('menu-item')} icon={data.icon} to={data.to} type='text-black'>
                 {data.title}
             </Button>
         </>

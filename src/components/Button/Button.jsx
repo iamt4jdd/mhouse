@@ -25,7 +25,7 @@ const Button = ({
         onClick,
         ...passProps
     }
-
+    
     if(to){
         props.to = to
         Comp = Link

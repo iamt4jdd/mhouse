@@ -54,12 +54,12 @@
     min-width: 1px;
     justify-content: flex-start;
     padding: 8px;
+    margin: 0 10px;
     color: #fff;
 
 
     &:hover {
-        color: #eebd00;
-        text-decoration: underline;
+        color: #7ed957;
     }
 
     // &:hover::after {
@@ -72,6 +72,28 @@
     // }
 
 }
+
+.text-black {
+    border-radius: 0;
+    font-weight: 600;
+    font-size: .6em;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: -0.028px;
+    min-width: 1px;
+    justify-content: flex-start;
+    padding: 8px;
+    color: #000;
+
+
+    &:hover {
+        background-color: #7ed957;
+    }
+
+
+
+}
+
 
 .image, .icon {
     width: 32px;

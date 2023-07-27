@@ -1,7 +1,7 @@
 import classNames from "classnames/bind"
 import styles from './HeaderTop.module.scss'
 
-import { HeaderInner, Icon } from "~/components"
+import { InnerContainer, Icon } from "~/components"
 import images from "~/assets/images"
 const cx = classNames.bind(styles)
 
@@ -39,12 +39,12 @@ const HeaderTop = () => {
     return (
         <>
             <div className={`${cx('header-top')}`}>
-                <HeaderInner>
+                <InnerContainer>
                     <span className={cx('hot-line')}>HOTLINE | <strong>0327 853 764</strong></span>   
                     <div className={cx('top-nav-bar')}>
                         {renderItems()}
                     </div>
-                </HeaderInner>
+                </InnerContainer>
             </div>
         </>
     )

@@ -1,9 +1,8 @@
 import classNames from "classnames/bind"
 import { Link } from "react-router-dom"
 
-
 import styles from './HeaderMain.module.scss'
-import { HeaderInner, Button } from "~/components"
+import { InnerContainer, Button } from "~/components"
 import { Menu } from "~/components/Popper"
 import images from "~/assets/images"
 const cx = classNames.bind(styles)
@@ -20,7 +19,6 @@ const NAV_ITEM = [
     },
     {
         title: 'Services',
-        to: '/services',
         children: [
             {
                 title: 'Interior Design',
@@ -52,37 +50,45 @@ const NAV_ITEM = [
 ]
 
 
+
+
 const HeaderMain = () => {
+
 
 
     const renderItems = () => {
 
 
-
-
         return NAV_ITEM.map((item, index) => {
+            let Comp = 'div'
+            if (item.children){
+                Comp = Menu
+            }
+            
+   
             return (
-                <Menu key={index}>
-                    <Button className='nav-item' type='text' to={item.to}>{item.title}</Button>
-                </Menu>
+                <Comp key={index} items={item.children}>
+                    <span tabIndex='0'>
+                        <Button className='nav-item' type='text' to={item.to}>{item.title}</Button>
+                    </span>
+                </Comp>
             )
             
-        }
-        )
+        })
     }
 
 
     return (
         <>
             <div className={cx('header-main')}>
-                <HeaderInner>
+                <InnerContainer>
                     <Link to="/">
                         <img className={cx('logo')} src={images.logo} alt="logo" />
                     </Link>
                     <div className={cx('nav-bar')}>
                         {renderItems()}
                     </div>
-                </HeaderInner>
+                </InnerContainer>
             </div>
         </>
     )

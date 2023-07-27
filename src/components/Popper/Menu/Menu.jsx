@@ -19,7 +19,7 @@ const Menu = ({children, items=[]}) => {
             <Tippy
                 interactive
                 delay={[0, 1000]}
-                placement='bottom-end'
+                placement='bottom-start'
                 render={attrs => (
                     <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
                         <PopperWrapper>
