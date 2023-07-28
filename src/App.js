@@ -9,7 +9,7 @@ function App() {
   return (
     <>
      <Router>
-      <div className="app">
+      <div className="w-full overflow-hidden">
         <Routes>
           {publicRoutes.map( (route, index) => {
               let Page = route.component

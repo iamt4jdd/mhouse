@@ -3,6 +3,8 @@ import instagram from "./instagram.svg";
 import youtube from "./youtube.svg";
 import angleDown from "./angleDown.svg";
 import logo from "./logo.png";
+import menu from "./menu.svg";
+import close from "./close.svg";
 import {
   Building1,
   Building2,
@@ -28,6 +30,8 @@ const images = {
   instagram,
   youtube,
   logo,
+  menu,
+  close,
   angleDown,
   Building1,
   Building2,

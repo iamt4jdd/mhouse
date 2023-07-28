@@ -10,10 +10,10 @@ const HeaderTop = () => {
 		<>
 			<div className={`${cx("gradient__bg")}`}>
 				<InnerContainer>
-					<span className={cx("hot-line")}>
+					<span className={`${cx("hot-line")} sm:justify-self-start`}>
 						HOTLINE | <strong>0327 853 764</strong>
 					</span>
-					<div className={cx("top-nav-bar")}>
+					<div className={`${cx("top-nav-bar")} md:px-[5px] md:mr-[5px]`}>
 						<IconRenderer />
 					</div>
 				</InnerContainer>

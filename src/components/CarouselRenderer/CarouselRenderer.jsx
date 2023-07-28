@@ -9,13 +9,21 @@ const cx = classNames.bind(styles);
 
 const CAROUSEL_ITEM = [
     {
-        title: 'Buiding 1',
+        title: 'Building 1',
         image: images.Building1,
     },
     {
-        title: 'Buiding 2',
+        title: 'Building 2',
         image: images.Building3,
-    }
+    },
+    {
+        title: 'Building 3',
+        image: images.Building10,
+    },
+    {
+        title: 'Building 4',
+        image: images.Building13,
+    },
 ]
 
 
@@ -27,7 +35,24 @@ const CarouselRenderer = ({children}) => {
      }
 
     return (
-        <Carousel className="w-75">
+        <Carousel 
+            className={`${cx('carousel-container')} w-75 h-[45rem]`}
+            navigation={({ setActiveIndex, activeIndex, length }) => (
+                <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                  {new Array(length).fill("").map((_, i) => (
+                    <span
+                      key={i}
+                      className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                        activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                      }`}
+                      onClick={() => setActiveIndex(i)}
+                    />
+                  ))}
+                </div>
+            )}
+            
+
+        >
             {renderItems()}
         </Carousel>
     )

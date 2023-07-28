@@ -25,7 +25,7 @@ const InnerContainer = ({
     
     return (
         <>
-            <div className={classes} {...props}>
+            <div className={`${classes} sm:mx-[86px] md:mx[172px]`} {...props}>
                 {children}
             </div>
         </>

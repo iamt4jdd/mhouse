@@ -1,7 +1,5 @@
 import classNames from "classnames/bind";
-import { Carousel } from "@material-tailwind/react";
 
-import images from "~/assets/images";
 import styles from './CarouselRenderer.module.scss'
 
 
@@ -12,7 +10,7 @@ const CarouselItem = ({data, children}) => {
 
     return (
 
-        <div className="relative h-full w-full">
+        <div className={`${cx('carousel-item-container')} relative h-full w-full`}>
             <img
             src={data.image}
             alt="building 1"
