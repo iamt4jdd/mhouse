@@ -1,0 +1,17 @@
+export { default as Building2 } from './Building2.jpg';
+export { default as Building1 } from './Building1.jpg';
+export { default as Building3 } from './Building3.jpg';
+export { default as Building4 } from './Building4.jpg';
+export { default as Building5 } from './Building5.jpg';
+export { default as Building6 } from './Building6.jpg';
+export { default as Building7 } from './Building7.jpg';
+export { default as Building8 } from './Building8.jpg';
+export { default as Building9 } from './Building9.jpg';
+export { default as Building10 } from './Building10.jpg';
+export { default as Building11 } from './Building11.jpg';
+export { default as Building12 } from './Building12.jpg';
+export { default as Building13 } from './Building13.jpg';
+export { default as Building14 } from './Building14.jpg';
+export { default as Building15 } from './Building15.jpg';
+export { default as Building16 } from './Building16.jpg';
+export { default as Building17 } from './Building17.jpg';

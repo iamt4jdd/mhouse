@@ -13,7 +13,7 @@ const cx = classNames.bind(styles)
 const Footer = () => {
     return (
         <>
-            <div className={`${cx('footer-container')} w-full`}>
+            <div className={`${cx('footer-container')}`}>
                 <FooterMain />
                 <FooterCloser />
             </div>

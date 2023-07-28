@@ -1,8 +1,9 @@
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
 
+
 import styles from "./HeaderMain.module.scss";
-import { InnerContainer, Button } from "~/components";
+import { InnerContainer, Button, CarouselRenderer } from "~/components";
 import { Menu } from "~/components/Popper";
 import images from "~/assets/images";
 const cx = classNames.bind(styles);
@@ -45,7 +46,7 @@ const NAV_ITEM = [
 		title: "Contact",
 		to: "/contact",
 	},
-];
+];	
 
 const HeaderMain = () => {
 	const renderItems = () => {
@@ -70,12 +71,18 @@ const HeaderMain = () => {
 	return (
 		<>
 			<div className={cx("header-main")}>
-				<InnerContainer>
-					<Link to="/">
-						<img className={cx("logo")} src={images.logo} alt="logo" />
-					</Link>
-					<div className={cx("nav-bar")}>{renderItems()}</div>
-				</InnerContainer>
+				
+				<CarouselRenderer>
+					<InnerContainer>
+						<div>
+							&nbsp;
+							<Link to="/">
+								<img className={cx("logo")} src={images.logo} alt="logo" />
+							</Link>
+						</div>
+						<div className={cx("nav-bar")}>{renderItems()}</div>
+					</InnerContainer>
+				</CarouselRenderer>
 			</div>
 		</>
 	);

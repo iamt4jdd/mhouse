@@ -7,7 +7,7 @@ const FooterCloser = () => {
     return (
         <>
             <div className={cx('footer-closer')}>
-                <h1 className="text-red-700">FooterCloser</h1>
+                asdasdas
             </div>
         </>
     )
