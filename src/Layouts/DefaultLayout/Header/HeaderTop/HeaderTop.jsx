@@ -9,7 +9,7 @@ const HeaderTop = () => {
 	return (
 		<>
 			<div className={`${cx("gradient__bg")}`}>
-				<InnerContainer>
+				<InnerContainer className=''>
 					<span className={`${cx("hot-line")} sm:justify-self-start`}>
 						HOTLINE | <strong>0327 853 764</strong>
 					</span>
