@@ -1,12 +1,12 @@
 .inner-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     min-height: inherit;
 }
 
 .primary {
     justify-content: space-between;
+    flex-direction: row;
     padding: 0 20px;
 }
 

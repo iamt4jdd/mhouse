@@ -59,6 +59,7 @@ const HeaderMain = () => {
 
 			let Comp = "div";
 			let NavComp = Link;
+			
 			if (item.children) {
 				Comp = Menu;
 			}
@@ -68,7 +69,7 @@ const HeaderMain = () => {
 
 			return (
 				<Comp key={index} items={item.children}>
-					<span tabIndex="0" className={isRes === 0 ? "md:flex hidden flex-1" : ""}>
+					<span tabIndex="0" className={isRes === 0 ? "sm:flex hidden flex-1" : ""}>
 						<NavComp className="nav-item" type="text" to={item.to}>
 							{item.title}
 						</NavComp>
@@ -83,7 +84,7 @@ const HeaderMain = () => {
 			<div className={cx("header-main")}>
 				
 				<CarouselRenderer>
-					<InnerContainer>
+					<InnerContainer className=''>
 						<div>
 							<Link to="/">
 								<img className={`${cx("logo")} h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5`} src={images.logo} alt="logo" />
@@ -91,7 +92,7 @@ const HeaderMain = () => {
 						</div>
 						<div className={cx("nav-bar")}>{renderItems(0)}</div>
 
-						<div className="md:hidden flex flex-1 justify-end items-center">
+						<div className="sm:hidden flex flex-1 justify-end items-center">
 							<img 
 								src={toggle ? images.close : images.menu} 
 								alt="menu"

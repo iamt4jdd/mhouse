@@ -10,7 +10,6 @@ const ContentContainer = ({
     children,
     title,
     type = 'primary',
-    size = 'medium',
     image,
     icon,
     className,
@@ -24,7 +23,6 @@ const ContentContainer = ({
     const classes = cx('content-container', {
         [className]: className,
         [type]: type,
-        [size]: size,
     })
 
 
