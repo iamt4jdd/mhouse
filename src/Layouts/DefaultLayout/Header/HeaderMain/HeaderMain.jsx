@@ -84,7 +84,7 @@ const HeaderMain = () => {
 			<div className={cx("header-main")}>
 				
 				<CarouselRenderer>
-					<InnerContainer className=''>
+					<InnerContainer className='md:mx[172px]'>
 						<div>
 							<Link to="/">
 								<img className={`${cx("logo")} h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5`} src={images.logo} alt="logo" />
