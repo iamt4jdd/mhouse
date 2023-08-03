@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-width: 84px;
-    height: 100%;
+
     padding: 9px 16px;
     border-radius: 4px;
     font-size: 1.6rem;
@@ -36,11 +36,20 @@
 
 // Button types CSS
 .primary {
-    background-color: rgba(254, 44, 85, 1);
+    background-color: #7ed957;
     color: var(--white);
-
+    font-weight: 600;
+    font-size: .9em;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: -0.028px;
+    min-width: 1px;
+    justify-content: center;
+    padding: 8px;
+    
+    
     &:hover {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#7ed957;
     }
 }
 
@@ -78,10 +87,37 @@
 
 }
 
+
+.text-white {
+    border-radius: 0;
+    font-weight: 700;
+    font-size: .9em;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: -0.028px;
+    min-width: 1px;
+    justify-content: flex-start;
+    padding: 8px;
+    margin: 0 10px;
+    color: #fff;
+
+
+    @keyframes sparkleAnimation {
+        0% { color: #7ed957; }
+        50% { color: #b7eb34; }
+        100% { color: #7ed957; }
+    }
+    
+    &:hover {
+        animation: sparkleAnimation 1s infinite;
+    }
+
+}
+
 .text-black {
     border-radius: 0;
     font-weight: 600;
-    font-size: .6em;
+    font-size: .9em;
     text-transform: uppercase;
     line-height: 16px;
     letter-spacing: -0.028px;
@@ -94,8 +130,6 @@
     &:hover {
         background-color: #7ed957;
     }
-
-
 
 }
 

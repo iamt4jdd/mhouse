@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 import { InnerContainer, Button, CarouselRenderer } from "~/components";
@@ -52,7 +52,10 @@ const NAV_ITEM = [
 const HeaderMain = () => {
 
 	const [toggle, setToggle] = useState(false)
+	const location = useLocation();
 
+
+	
 
 	const renderItems = (isRes) => {
 		return NAV_ITEM.map((item, index) => {
@@ -63,6 +66,7 @@ const HeaderMain = () => {
 			if (item.children) {
 				Comp = Menu;
 			}
+
 			if (isRes === 0) {
 				NavComp = Button
 			}
@@ -70,7 +74,7 @@ const HeaderMain = () => {
 			return (
 				<Comp key={index} items={item.children}>
 					<span tabIndex="0" className={isRes === 0 ? "sm:flex hidden flex-1" : ""}>
-						<NavComp className="nav-item" type="text" to={item.to}>
+						<NavComp className="nav-item" type={isHome ? 'text' : 'text-white'} to={item.to}>
 							{item.title}
 						</NavComp>
 					</span>
@@ -79,15 +83,25 @@ const HeaderMain = () => {
 		});
 	};
 
+	
+	
+
+	const isHome = location.pathname === "/"; // Check if current route is home
+
+	const Wrapper = ({ children }) => {
+		const Comp = isHome ? CarouselRenderer : "div";
+
+		return <Comp>{children}</Comp>;
+	};
+
 	return (
 		<>
-			<div className={cx("header-main")}>
-				
-				<CarouselRenderer>
+			<div className={`${cx("header-main")} ${isHome ? '' : 'bg-stone-900'}`}>
+				<Wrapper>
 					<InnerContainer className='md:mx[172px]'>
 						<div>
 							<Link to="/">
-								<img className={`${cx("logo")} h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5`} src={images.logo} alt="logo" />
+								<img className={`${cx("logo")} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5' : 'h-[60px] w-[80px] m-4'}`} src={images.logo} alt="logo" />
 							</Link>
 						</div>
 						<div className={cx("nav-bar")}>{renderItems(0)}</div>
@@ -110,7 +124,7 @@ const HeaderMain = () => {
 							</ul>
 						</div>
 					</InnerContainer>
-				</CarouselRenderer>
+				</Wrapper>
 			</div>
 		</>
 	);
