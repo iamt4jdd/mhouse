@@ -101,7 +101,7 @@ const HeaderMain = () => {
 					<InnerContainer className='md:mx[172px]'>
 						<div>
 							<Link to="/">
-								<img className={`${cx("logo")} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5' : 'h-[60px] w-[80px] m-4'}`} src={images.logo} alt="logo" />
+								<img className={`${cx("logo")} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5' : 'h-[60px] w-[80px] m-4 ml-0'}`} src={images.logo} alt="logo" />
 							</Link>
 						</div>
 						<div className={cx("nav-bar")}>{renderItems(0)}</div>
