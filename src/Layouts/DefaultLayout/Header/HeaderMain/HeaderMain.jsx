@@ -86,7 +86,7 @@ const HeaderMain = () => {
 	
 	
 
-	const isHome = location.pathname === "/"; // Check if current route is home
+	const isHome = location.pathname === "/"; 
 
 	const Wrapper = ({ children }) => {
 		const Comp = isHome ? CarouselRenderer : "div";

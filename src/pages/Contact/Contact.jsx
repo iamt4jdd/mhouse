@@ -16,7 +16,7 @@ const ContentCol = ({children}) => {
 
 const Input = ({placehoder}) => {
     return (
-        <input placeholder={placehoder} className='w-full h-[40px] mb-[15px] px-[15px] border border-gray-300 drop-shadow-md rounded-sm'></input>
+        <input placeholder={placehoder} className='w-full h-[40px] mb-[15px] px-[15px] border border-gray-300 shadow-inner rounded-sm'></input>
     )
 }
 
@@ -51,7 +51,7 @@ const Contact = () => {
                         <Input placehoder='Full name'/>
                         <Input placehoder='Email'/>
                         <Input placehoder='Phone number'/>
-                        <textarea placeholder='Main content' className='w-full h-[140px] mb-[15px] p-[15px] border border-gray-300 drop-shadow-md rounded-sm'></textarea>
+                        <textarea placeholder='Main content' className='w-full h-[140px] mb-[15px] p-[15px] border border-gray-300 shadow-inner rounded-sm'></textarea>
                         <Button className='w-[120px] h-[40px]'>Submit</Button>
                     </ContentCol>
                 </div>

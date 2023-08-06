@@ -11,18 +11,22 @@ const CAROUSEL_ITEM = [
     {
         title: 'Building 1',
         image: images.Building1,
+        slogan: 'Interior Construction'
     },
     {
         title: 'Building 2',
         image: images.Building3,
+        slogan: 'Renovate Building'
     },
     {
         title: 'Building 3',
         image: images.Building10,
+        slogan: 'ádasdasdasd'
     },
     {
         title: 'Building 4',
         image: images.Building13,
+        slogan: 'dfgdfgdgdfgdfgdf'
     },
 ]
 
@@ -50,8 +54,6 @@ const CarouselRenderer = ({children}) => {
                   ))}
                 </div>
             )}
-            
-
         >
             {renderItems()}
         </Carousel>
