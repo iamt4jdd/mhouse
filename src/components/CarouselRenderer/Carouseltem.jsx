@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import { Typography } from "@material-tailwind/react";
+// import { Typography } from "@material-tailwind/react";
 
 import styles from './CarouselRenderer.module.scss'
 
@@ -19,13 +19,13 @@ const CarouselItem = ({data, children}) => {
             />
             <div className="absolute inset-0 h-full w-full">            
                 {children}
-                <Typography
+                {/* <Typography
                     variant="h1"
                     color="#fff"
                     className="mb-4 text-3xl md:text-4xl lg:text-5xl"
                 >
                 {data.slogan}
-                </Typography>
+                </Typography> */}
             </div>
         </div>
     )

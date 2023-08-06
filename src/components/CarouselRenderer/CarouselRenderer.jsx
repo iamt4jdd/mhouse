@@ -40,7 +40,7 @@ const CarouselRenderer = ({children}) => {
 
     return (
         <Carousel 
-            className={`${cx('carousel-container')} w-75 h-[45rem]`}
+            className={`${cx('carousel-container')} h-[30rem]`}
             navigation={({ setActiveIndex, activeIndex, length }) => (
                 <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                   {new Array(length).fill("").map((_, i) => (

@@ -43,9 +43,9 @@ const Button = ({
     return (
         <>
             <Comp className={classes} {...props}>
-                <span className={cx('title')}>{children}</span>
-                {image && <img src={image} alt="" className={cx('image')}/>}
                 {icon && <span className={cx('icon')}>{icon}</span>}
+                <span className={cx('title')}>{children}</span>
+                {image && <img  src={image} alt="" className={cx('image')}/>}
             </Comp>
         </>
     )

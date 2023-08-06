@@ -3,7 +3,11 @@
 const Home = () => {
     return (
         <>
-            <h1>Home</h1>
+            <section id='Home'>
+                <h1>
+                    Home
+                </h1>
+            </section>
         </>
     )
 }
