@@ -25,23 +25,23 @@ const NAV_ITEM = [
 		children: [
 			{
 				title: "HomeStay Design",
-				to: "/services/home-stay-design",
+				to: "/services/#home-stay-design",
 			},
 			{
 				title: "Interior Design",
-				to: "/services/interior-design",
+				to: "/services/#interior-design",
 			},
 			{
 				title: "Renovation",
-				to: "/services/renovation",
+				to: "/services/#renovation",
 			},
 			{
 				title: "Consulting",
-				to: "/services/consulting",
+				to: "/services/#consulting",
 			},
 			{
 				title: "Construction",
-				to: "/services/construction",
+				to: "/services/#construction",
 			},
 		],
 	},
@@ -105,7 +105,7 @@ const HeaderMain = () => {
 					<InnerContainer className=''>
 						<div>
 							<Link to="/">
-								<img className={`${cx("logo")} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5' : 'h-[60px] w-[80px] m-4 ml-0'}`} src={images.logo} alt="logo" />
+								<img className={`${cx("logo")} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5 ml-0' : 'h-[60px] w-[80px] m-4 ml-0'}`} src={images.logo} alt="logo" />
 							</Link>
 						</div>
 						<div className={cx("nav-bar")}>{renderItems(0)}</div>
@@ -141,7 +141,7 @@ const HeaderMain = () => {
 						</div>
 						<div className='flex-grow min-w-[50%]'>
 							{/* <CarouselRenderer/> */}
-							<img src={images.heroImg} alt='hero' className='animate-bounce-custom z-0'></img>
+							<img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img>
 						</div>
 					</InnerContainer>
 					}

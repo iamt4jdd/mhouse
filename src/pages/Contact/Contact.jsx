@@ -25,7 +25,7 @@ const Input = ({placehoder}) => {
 const Contact = () => {
     return (
         <>
-            <InnerContainer className='py-8 md:mx-[172px]' type=''>
+            <InnerContainer className='py-8' type=''>
                 <div className='min-w-full min-h-full flex flex-1'>
                     <ContentCol>
                         <h1 className='w-full mt-0'>CONTACT US</h1>
@@ -56,6 +56,7 @@ const Contact = () => {
                     </ContentCol>
                 </div>
             </InnerContainer>
+            
         </>
     )
 }
