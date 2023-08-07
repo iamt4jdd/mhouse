@@ -11,18 +11,22 @@ const CAROUSEL_ITEM = [
     {
         title: 'Building 1',
         image: images.Building1,
+        slogan: 'Interior Construction'
     },
     {
         title: 'Building 2',
         image: images.Building3,
+        slogan: 'Renovate Building'
     },
     {
         title: 'Building 3',
         image: images.Building10,
+        slogan: 'ádasdasdasd'
     },
     {
         title: 'Building 4',
         image: images.Building13,
+        slogan: 'dfgdfgdgdfgdfgdf'
     },
 ]
 
@@ -36,7 +40,7 @@ const CarouselRenderer = ({children}) => {
 
     return (
         <Carousel 
-            className={`${cx('carousel-container')} w-75 h-[45rem]`}
+            className={`${cx('carousel-container')} h-[30rem]`}
             navigation={({ setActiveIndex, activeIndex, length }) => (
                 <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                   {new Array(length).fill("").map((_, i) => (
@@ -50,8 +54,6 @@ const CarouselRenderer = ({children}) => {
                   ))}
                 </div>
             )}
-            
-
         >
             {renderItems()}
         </Carousel>

@@ -24,6 +24,7 @@ import {
   Building16,
   Building17,
 } from "./Building";
+import heroImg from './hero-img.png'
 
 const images = {
   facebook,
@@ -32,6 +33,7 @@ const images = {
   logo,
   menu,
   close,
+  heroImg,
   angleDown,
   Building1,
   Building2,

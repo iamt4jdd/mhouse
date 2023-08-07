@@ -14,6 +14,19 @@ module.exports = withMT({
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      keyframes: {
+        'bounce-custom': {
+         '0%, 100%': {
+            transform: 'translateY(-1%)',
+          },
+          '50%': {
+            transform: 'translateY(0)'
+          }
+        }
+      },
+      animation: {
+        'bounce-custom': 'bounce-custom 3s infinite',
+      },
     },
     screens: {
       xs: "480px",
