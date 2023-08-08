@@ -25,7 +25,7 @@ const TextField = ({children}) => {
 const AboutUs = () => {
     return (
         <>
-            <div className='wrapper'>
+            <div className='wrapper bg-stale-300'>
                 <ContentRenderer>
                     <div className='flex flex-1 flex-col flex-grow justify-center p-6 min-w-[50%]'>
                         <h2 className='font-medium text-2xl sm:text-4xl '>
@@ -51,7 +51,7 @@ const AboutUs = () => {
                 </ContentRenderer>
                 <ContentRenderer>
                     <div className='flex flex-1 flex-col flex-grow justify-center min-w-[50%]'>
-                        <h2 className='text-gray-400 font-medium text-2xl sm:text-4xl'>Explore Your HomeStay Dream</h2>	
+                        <h2 className='text-gray-400 font-medium text-2xl sm:text-4xl'>Tại sao chọn MHouse</h2>	
                     </div>
                     <div className='flex-grow min-w-[50%]'>
                         <img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img>
