@@ -136,11 +136,11 @@ const HeaderMain = () => {
 					</InnerContainer>				
 				</Wrapper>
 				{isHome && 
-				<div className={`${cx('hero-gradient')} p-8 absolute right-24 top-80 w-[500px]`}>
+				<div className={`${cx('hero-gradient')} px-40 absolute top-[26rem] w-full`}>
 					<div className='flex flex-1 flex-col min-w-[50%]'>
-						<h1 className='text-white font-bold text-4xl sm:text-6xl md:text-7xl mb-[30px] sm:text-right'>MHouse</h1>
+						<h1 className='text-white font-bold text-4xl sm:text-6xl md:text-7xl mb-[30px] sm:text-right mt-3'>MHouse</h1>
 						<h2 className='text-gray-400 font-medium text-2xl sm:text-3xl sm:text-right'>Explore Your HomeStay Dream</h2>
-						<div className=' my-10 sm:mt-20 flex flex-1 flex-row sm:justify-end'>
+						<div className=' my-10 sm:mt-16 flex flex-1 flex-row sm:justify-end'>
 							<Button href='#home' className='h-[50px] w-[140px]' type='primary-rounded'>Get Ready</Button>
 							<Button href='https://www.youtube.com/' className='h-[50px]' type='text' 
 							icon={<FontAwesomeIcon icon={faCirclePlay} className='h-[30px] w-[32px]' />}>Watch Video</Button>
