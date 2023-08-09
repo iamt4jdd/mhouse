@@ -15,3 +15,7 @@ export { default as Building14 } from './Building14.jpg';
 export { default as Building15 } from './Building15.jpg';
 export { default as Building16 } from './Building16.jpg';
 export { default as Building17 } from './Building17.jpg';
+export { default as Building18 } from './Building18.jpg';
+export { default as Building19 } from './Building19.png';
+export { default as Building20 } from './Building20.jpg';
+export { default as Building21 } from './Building21.jpg';
