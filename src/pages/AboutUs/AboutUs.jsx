@@ -46,7 +46,7 @@ const AboutUs = () => {
                         </TextField>
                     </div>
                     <div className='flex-grow min-w-[50%]'>
-                        <img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img>
+                        <img src={images.heroImg} alt='hero' className='animate-bounce-custom z-0'></img>
                     </div>
                 </ContentRenderer>
                 <ContentRenderer>
@@ -54,7 +54,7 @@ const AboutUs = () => {
                         <h2 className='text-gray-400 font-medium text-2xl sm:text-4xl'>Tại sao chọn MHouse</h2>	
                     </div>
                     <div className='flex-grow min-w-[50%]'>
-                        <img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img>
+                        <img src={images.heroImg} alt='hero' className='animate-bounce-custom z-0'></img>
                     </div>
                 </ContentRenderer>
                 <ContentRenderer>
@@ -62,7 +62,7 @@ const AboutUs = () => {
                         <h2 className='text-gray-400 font-medium text-2xl sm:text-4xl'>Explore Your HomeStay Dream</h2>	
                     </div>
                     <div className='flex-grow min-w-[50%]'>
-                        <img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img>
+                        <img src={images.heroImg} alt='hero' className='animate-bounce-custom z-0'></img>
                     </div>
                 </ContentRenderer>
             </div>

@@ -150,7 +150,7 @@ const HeaderMain = () => {
 						</div>
 						<div className='flex-grow min-w-[50%]'>
 							{/* <CarouselRenderer/> */}
-							{/* <img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img> */}
+							{/* <img src={images.heroImg} alt='hero' className='animate-bounce-custom z-0'></img> */}
 						</div>
 						</InnerContainer>
 					</div>
