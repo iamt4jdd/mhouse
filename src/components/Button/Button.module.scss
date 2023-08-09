@@ -6,7 +6,6 @@
     min-width: 84px;
 
     padding: 9px 16px;
-    border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
@@ -46,7 +45,7 @@
     min-width: 1px;
     justify-content: center;
     padding: 8px;
-    
+    border-radius: 4px;
     
     &:hover {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#7ed957;
@@ -127,6 +126,14 @@
     color: rgba(22, 24, 35, .75);
     border-color: rgba(22, 24, 35, .12);
     background-color: rgba(255, 255, 255, 1);
+}
+
+.primary-red {
+    background-color: #dd2c47;
+    color: #fff;
+    height: 38px;
+    font-size: 16px;
+    line-height: 1.5rem;
 }
 
 .primary-rounded {

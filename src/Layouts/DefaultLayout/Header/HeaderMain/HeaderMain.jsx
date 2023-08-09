@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { CarouselRenderer } from "~/components";
 import { InnerContainer, Button } from "~/components";
 import { Menu } from "~/components/Popper";
 import styles from "./HeaderMain.module.scss";
@@ -98,10 +99,16 @@ const HeaderMain = () => {
 
 	const isHome = location.pathname === "/"; 
 
+	const Wrapper = ({ children }) => {
+		const Comp = isHome ? CarouselRenderer : "div";
+
+		return <Comp>{children}</Comp>;
+	};
+
 	return (
 		<>
 			<div className={`${cx("header-main")} ${isHome ? '' : 'bg-stone-900'}`}>
-				<div className={`${cx('header-main-wrapper')} ${isHome ? 'md:h-[45rem]' : ''}`}>
+				<Wrapper className={`${cx('header-main-wrapper')} ${isHome ? 'md:h-[45rem]' : ''}`}>
 					<InnerContainer className=''>
 						<div>
 							<Link to="/">
@@ -128,8 +135,10 @@ const HeaderMain = () => {
 							</ul>
 						</div>
 					</InnerContainer>
+					
 					{isHome && 
-					<InnerContainer type='' className='flex-col-reverse sm:flex-row sm:px-[50px] md:px-0'>
+					<div className={`${cx('hero-gradient')} relative top-28`}>
+						<InnerContainer type='' className='flex-col-reverse sm:flex-row sm:px-[50px] md:px-0'>
 						<div className='flex flex-1 flex-col flex-grow justify-center min-w-[50%]'>
 							<h1 className='text-white font-bold text-4xl sm:text-6xl md:text-8xl mb-[30px]'>MHouse</h1>
 							<h2 className='text-gray-400 font-medium text-2xl sm:text-4xl'>Explore Your HomeStay Dream</h2>
@@ -141,11 +150,12 @@ const HeaderMain = () => {
 						</div>
 						<div className='flex-grow min-w-[50%]'>
 							{/* <CarouselRenderer/> */}
-							<img src={images.heroImg} alt='hero' clxassName='animate-bounce-custom z-0'></img>
+							{/* <img src={images.heroImg} alt='hero' className='animate-bounce-custom z-0'></img> */}
 						</div>
-					</InnerContainer>
+						</InnerContainer>
+					</div>
 					}
-				</div>
+				</Wrapper>
 			</div>
 		</>
 	);

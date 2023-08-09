@@ -11,7 +11,7 @@ const DefaultLayout = ({ children }) => {
         <>
             <div className={cx('layout-container')}>
                 <Header />
-                <div className={cx('content')}>
+                <div className='bg-gray-200 bg-opacity-100 min-w-full min-h-full'>
                     {children}
                 </div>
                 <Footer />
