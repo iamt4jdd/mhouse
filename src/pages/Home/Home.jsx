@@ -1,10 +1,11 @@
-import { Button } from "~/components"
+import { Button, InnerContainer } from "~/components"
 import images from "~/assets/images"
 
 
-const Container = ({children}) => {
+const Container = ({children, className}) => {
+
     return (
-        <div className='flex flex-1 flex-col sm:flex-row md:px-20 py-24'>
+        <div className={`${className} flex flex-1 flex-col sm:flex-row`}>
             {children}
         </div>
     )
@@ -16,8 +17,8 @@ const Home = () => {
             
             <section id='Home'>
                <div className=''>
-                    <Container>
-                        <div className='relative md:left-16 xl:left-32 flex flex-col justify-center max-w-[750px]'>
+                    <Container className='md:px-20 pt-24 sm:pb-24'>
+                        <div className='relative md:left-14 xl:left-32 p-8 flex flex-col justify-center max-w-[750px]'>
                             <h2 className='font-medium uppercase text-xl sm:text-3xl md:text-5xl tracking-wide'>
                                 <strong className='text-3xl sm:text-5xl md:text-7xl'>We Love to build.</strong>
                                 <br/>
@@ -44,8 +45,39 @@ const Home = () => {
                         </div>
                     </Container>
 
-                    <Container>
-                        
+                    <Container className='pb-24'>
+                        <div className='flex flex-col justify-center md:w-[800px] md:h-[700px]'>
+                            <img src={images.Building22} alt="Building" className='h-full w-full' />
+                        </div>
+                        <div className='bg-brownBlack md:w-[720px] md:h-[600px] py-4 sm:py-0 sm:my-12'>
+                            <div className='relative sm:right-24 sm:px-20 sm:py-16 md:py-32 flex flex-col bg-brownBlack w-full h-full'>
+                                <h2 className='text-white font-medium text-2xl sm:text-4xl xl:text-7xl'>A TRUSTED,<br/> COLLABORATIVE PARTNER<br/>
+                                <strong>FOCUSED ON YOUR GOALS</strong>
+                                </h2>
+                                <p className='text-gray-300 leading-6 text-lg tracking-wide mt-8'>From our industry-leading approaches to safety and quality, 
+                                    to our passion for progressive delivery, innovation and technology, 
+                                    we deliver certainty by focusing on what matters to you.
+                                </p>
+                                <div className='my-10 sm:mt-10 flex'>
+                                    <Button to='/services' className='hover-add-swipe' type='primary-non-border'>Our Services</Button>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+
+                    <Container className='py-24'>
+                        <InnerContainer className='flex flex-1'>
+                            <div className='flex flex-1 flex-row justify-between'>
+                                <h2 className='uppercase text-3xl font-medium'>Recent Insights</h2>
+                                <div className='flex'>
+                                    <Button className='uppercase mr-[32px]' type='primary-non-border'>All Insights</Button>
+                                    <ul className='flex align-middle'>
+                                        <li className='mr-2'>asdasas</li>
+                                        <li>adasdas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </InnerContainer>
                     </Container>
 
                </div>
