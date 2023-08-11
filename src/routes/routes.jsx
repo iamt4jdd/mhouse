@@ -3,7 +3,7 @@ import {
     AboutUs,
     Services,
     Project,
-    News,
+    Insights,
     Contact,
 } from '~/pages'
 
@@ -12,7 +12,7 @@ const publicRoutes = [
     { path: '/about-us', component: AboutUs},
     { path: '/services', component: Services},
     { path: '/project', component: Project},
-    { path: '/news', component: News},
+    { path: '/insights', component: Insights},
     { path: '/contact', component: Contact},
 ]
 

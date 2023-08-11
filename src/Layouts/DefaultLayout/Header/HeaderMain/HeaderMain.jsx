@@ -52,8 +52,8 @@ const NAV_ITEM = [
 		to: "/project",
 	},
 	{
-		title: "News",
-		to: "/news",
+		title: "Insights",
+		to: "/insights",
 	},
 	{
 		title: "Contact",
@@ -109,9 +109,9 @@ const HeaderMain = () => {
 			<div className={`${cx("header-main")} ${isHome ? '' : 'bg-stone-900'}`}>
 				<Wrapper className={`${cx('header-main-wrapper')} ${isHome ? 'md:h-[45rem]' : ''}`}>
 					<InnerContainer className=''>
-						<div>
+						<div className=''>
 							<Link to="/">
-								<img className={`${cx("logo")} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5 ml-0' : 'h-[60px] w-[80px] m-4 ml-0'}`} src={images.logo} alt="logo" />
+								<img className={`${isHome ? cx("logo") : ''} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5 ml-0' : 'h-[80px] w-[80px] m-4 ml-0'}`} src={images.logo} alt="logo" />
 							</Link>
 						</div>
 						<div className={cx("nav-bar")}>{renderItems(0)}</div>
@@ -136,7 +136,7 @@ const HeaderMain = () => {
 					</InnerContainer>				
 				</Wrapper>
 				{isHome && 
-				<div className={`${cx('hero-gradient')} px-40 absolute top-[26rem] w-full`}>
+				<div className={`${cx('hero-gradient')} px-8 md:px-40 absolute top-[26rem] w-full`}>
 					<div className='flex flex-1 flex-col min-w-[50%]'>
 						<h1 className='text-white font-bold text-4xl sm:text-6xl md:text-7xl mb-[30px] sm:text-right mt-3'>MHouse</h1>
 						<h2 className='text-gray-400 font-medium text-2xl sm:text-3xl sm:text-right'>Explore Your HomeStay Dream</h2>
