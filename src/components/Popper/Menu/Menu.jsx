@@ -21,7 +21,7 @@ const Menu = ({children, items=[]}) => {
                 delay={[0, 1000]}
                 placement='bottom-start'
                 render={attrs => (
-                    <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
+                    <div className={`${cx('menu-list')}`} tabIndex="-1" {...attrs}>
                         <PopperWrapper>
                             <ul>
                                 {renderItems()}
