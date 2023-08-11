@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { Button, InnerContainer } from "~/components"
 import images from "~/assets/images"
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
 
 const Container = ({children, className}) => {
@@ -72,8 +75,8 @@ const Home = () => {
                                 <div className='flex'>
                                     <Button className='uppercase mr-[32px]' type='primary-non-border'>All Insights</Button>
                                     <ul className='flex align-middle'>
-                                        <li className='mr-2'>asdasas</li>
-                                        <li>adasdas</li>
+                                        <li className='mr-2'><Button type='scroll' icon={<FontAwesomeIcon icon={faChevronLeft} />} /></li>
+                                        <li><Button type='scroll' icon={<FontAwesomeIcon icon={faChevronRight} />} /></li>
                                     </ul>
                                 </div>
                             </div>
