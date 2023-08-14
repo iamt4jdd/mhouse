@@ -4,8 +4,13 @@
     font-family: var(--font-family);
 }
 
+.nav-wrapper {
+    background-color: #222222;
+}
+
 .nav-scroll {
     background-color: #222222;
+    z-index: 1000;
 }
 
 .nav-bar {
