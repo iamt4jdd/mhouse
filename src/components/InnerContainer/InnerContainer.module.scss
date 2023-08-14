@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     min-height: inherit;
+    min-width: inherit;
 }
 
 .primary {
     justify-content: space-between;
     flex-direction: row;
-    padding: 0 20px;
 }
 

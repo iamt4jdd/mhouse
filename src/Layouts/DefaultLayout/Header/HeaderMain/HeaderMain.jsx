@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { CarouselRenderer } from "~/components";
@@ -64,6 +64,19 @@ const NAV_ITEM = [
 const HeaderMain = () => {
 
 	const [toggle, setToggle] = useState(false)
+	const [isScroll, setIsScroll] = useState(false)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			window.scrollY > 700 ? setIsScroll(true) : setIsScroll(false)
+		}
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [])
+
 	const location = useLocation();
 	
 
@@ -93,8 +106,7 @@ const HeaderMain = () => {
 		});
 	};
 
-	
-	
+
 
 	const isHome = location.pathname === "/"; 
 
@@ -106,12 +118,13 @@ const HeaderMain = () => {
 
 	return (
 		<>
-			<div className={`${cx("header-main")} ${isHome ? '' : 'bg-stone-900'}`}>
-				<Wrapper className={`${cx('header-main-wrapper')} ${isHome ? 'md:h-[45rem]' : ''}`}>
-					<InnerContainer className=''>
+			<div className={`${cx("header-main")}  ${isHome ? '' : 'h-[112px]'}`}>
+				<Wrapper className={`${cx('header-main-wrapper')} ${isHome ? 'md:h-[45rem]' : ''} relative`}>
+					<InnerContainer className={`${cx('')} w-full fixed ${isHome ? '' : cx('nav-wrapper')} ${isScroll ? cx('nav-scroll') : "z-[9999]"} `} >
 						<div className=''>
 							<Link to="/">
-								<img className={`${isHome ? cx("logo") : ''} ${isHome ? 'h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5 ml-0' : 'h-[80px] w-[80px] m-4 ml-0'}`} src={images.logo} alt="logo" />
+								<img className={`${isHome ? (isScroll ? 'h-[80px] w-[80px] m-4 ml-0' : `${cx("logo")} h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] m-5 ml-0`) : 'h-[80px] w-[80px] m-4 ml-0'}`}
+								src={images.logo} alt="logo" />
 							</Link>
 						</div>
 						<div className={cx("nav-bar")}>{renderItems(0)}</div>
@@ -136,8 +149,8 @@ const HeaderMain = () => {
 					</InnerContainer>				
 				</Wrapper>
 				{isHome && 
-				<div className={`${cx('hero-gradient')} px-8 md:px-40 absolute top-[26rem] w-full`}>
-					<div className='flex flex-1 flex-col min-w-[50%]'>
+				<div className={`${cx('hero-gradient')} px-8 md:px-40 absolute top-[26rem] w-full z-0`} >
+					<div className='flex flex-1 flex-col'>
 						<h1 className='text-white font-bold text-4xl sm:text-6xl md:text-7xl mb-[30px] sm:text-right mt-3'>MHouse</h1>
 						<h2 className='text-gray-400 font-medium text-2xl sm:text-3xl sm:text-right'>Explore Your HomeStay Dream</h2>
 						<div className=' my-10 sm:mt-16 flex flex-1 flex-row sm:justify-end'>
