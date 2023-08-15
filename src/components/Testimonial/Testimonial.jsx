@@ -1,130 +1,121 @@
-import { useState } from "react";
 import Slider from "react-slick";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight, faStar } from "@fortawesome/free-solid-svg-icons"
 
 import images from "~/assets/images";
 
-
 const Testimonial = ({
-    listTestimonial = [
+  listTestimonial = [
+    {
+      title: "MHouse Completes Largest Public Port Project on Texas Coast",
+      image: images.Building1,
+      release: "News release",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a ante ac ipsum feugiat varius ut sit amet neque. Quisque eleifend pharetra lectus ac eleifend. ",
+    },
+    {
+      title: "Challenges and Opportunities of Water in Houston",
+      image: images.Building2,
+      release: "News release",
+      content:
+        "Fusce iaculis magna sit amet nisi tempor, a hendrerit tortor malesuada. Integer eget dolor eu felis sollicitudin commodo finibus eget felis.",
+    },
+    {
+      title: "MHouse Completes Barbours Cut Terminal Container Yard 3N",
+      image: images.Building3,
+      release: "News release",
+      content:
+        "Etiam lobortis ligula et ultrices blandit. Nulla mattis ligula ut tortor euismod, eget posuere tortor dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra",
+    },
+    {
+      title: "MHouse Awarded Texas Port Construction Contracts",
+      image: images.Building4,
+      release: "News release",
+      content:
+        "Vivamus semper elementum quam, sed maximus dolor interdum in. Integer rutrum iaculis felis eu accumsan.",
+    },
+    {
+      title: "New Craft Workforce Center in Chandler, Ariz. Unveiled",
+      image: images.Building5,
+      release: "News release",
+      content:
+        "In hac habitasse platea dictumst. Per inceptos himenaeos. Etiam ac fringilla ex.",
+    },
+    {
+      title: "MHouse Designed and Constructed Building in Chandler",
+      image: images.Building6,
+      release: "News release",
+      content:
+        "Donec porta ligula varius ex facilisis pulvinar. Quisque id vulputate leo, id interdum erat. Vivamus sapien dolor, tempus nec turpis vitae, egestas dapibus quam.",
+    },
+  ],
+  setSliderRef,
+}) => {
+  const settings = {
+    dots: false,
+    customPaging: function (i) {
+      return (
+        <a href="#aaa" className="">
+          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
+        </a>
+      );
+    },
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    responsive: [
       {
-        name: "cccccc",
-        image: images.logo,
-        city: "Warsaw",
-        country: "Poland",
-        rating: "4.5",
-        testimonial:
-          "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
       },
       {
-        name: "aaaaaaaa",
-        image: images.logo,
-        city: "Warsaw",
-        country: "Poland",
-        rating: "4.5",
-        testimonial:
-          "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-      },
-      {
-        name: "bbbbbbbbbb",
-        image: images.logo,
-        city: "Warsaw",
-        country: "Poland",
-        rating: "4.5",
-        testimonial:
-          "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-      },
-      {
-        name: "ddddddddddd",
-        image: images.logo,
-        city: "Warsaw",
-        country: "Poland",
-        rating: "4.5",
-        testimonial:
-          "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
     ],
-    sliderRef,
-    setSliderRef
-  }) => {
+  };
 
-    
-    const settings = {
-      dots: false,
-      customPaging: function (i) {
-        return (
-          <a href="#aaa" className="">
-            <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
-          </a>
-        );
-      },
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 2,
-      responsive: [
-        {
-          breakpoint: 770,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
+  //const [sliderRef, setSliderRef] = useState(null);
 
-    //const [sliderRef, setSliderRef] = useState(null);
-  
-    return (
-      <>
-        <Slider
-          {...settings}
-          arrows={false}
-          ref={setSliderRef}
-          className="flex flex-1 flex-row w-full px-[138px]"
-        >
-          {listTestimonial.map((listTestimonials, index) => (
-            <div className="px-3 flex items-stretch" key={index}>
-             <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-              <div className="flex flex-col md:flex-row w-full items-stretch md:items-center">
-                <div className="flex order-2 md:order-1">
-                    <img
-                      className='w-[50px] h-[50px]'
-                      src={listTestimonials.image}
-                      alt="Icon People"
-                    />
-                    <div className="flex flex-col ml-5 text-left">
-                      <p className="text-lg text-black-600 capitalize">
-                        {listTestimonials.name}
-                      </p>
-                      <p className="text-sm text-black-500 capitalize">
-                        {listTestimonials.city},{listTestimonials.country}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex flex-none items-center ml-auto order-1 md:order-2">
-                    <p className="text-sm">{listTestimonials.rating}</p>
-                    <span className="flex ml-4">
-                        <FontAwesomeIcon icon={faStar} className='h-4 w-4'/>
-                    </span>
-                  </div>
+  return (
+    <>
+      <Slider
+        {...settings}
+        arrows={false}
+        ref={setSliderRef}
+        className="flex flex-1 flex-row w-full md:px-[138px]"
+      >
+        {listTestimonial.map((listTestimonials, index) => (
+          <div className="px-3 flex items-stretch" key={index}>
+            <div className="">
+                <div className="">
+                  <img
+                    className="w-full h-[242px]"
+                    src={listTestimonials.image}
+                    alt="Icon People"
+                  />
                 </div>
-                <p className="mt-5 text-left">“{listTestimonials.testimonial}”.</p>
+                <div className="my-4 font-medium text-red-900 text-base uppercase">
+                    <p className="">{listTestimonials.release}</p>
+                </div>
+                <div className="my-4 font-bold text-xl">
+                    <h3 className="">{listTestimonials.title}</h3>
+                </div>
+                <div className="font-light text-gray-600">
+                    <p className="">{listTestimonials.content}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </>
-    );
-  }
+          </div>
+        ))}
+      </Slider>
+    </>
+  );
+};
 
-export default Testimonial
+export default Testimonial;
