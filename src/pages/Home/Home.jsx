@@ -71,13 +71,20 @@ const Home = () => {
                             </div>
                         </div>
                     </Container>
+                    
+                    <Container type='col' className='md:py-12 items-center'>
+                        <h1 className='uppercase font-bold text-3xl my-3'>If you can <span className='text-red-400'>dream</span> it</h1>
+                        <h1 className='uppercase font-bold text-3xl my-3'>We can <span className='text-amber-800'>build</span> it</h1>
+                        <h1 className='uppercase font-medium text-4xl text-center'>Make your <strong>HomeStay Dream</strong> come true <br/>with <strong className='text-greenMhouse'>MHouse</strong></h1>
+                        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum malesuada, lacinia ante et, suscipit dui. <br/> Aenean pulvinar bibendum massa, vel aliquet diam tincidunt ac.</p>
+                    </Container>
 
-                    <Container type='col' className='py-24'>
+                    <Container type='col' className='md:py-24'>
                         <InnerContainer className='flex flex-1 mb-10'>
-                            <div className='flex flex-1 flex-row justify-between'>
-                                <h2 className='uppercase text-3xl font-medium'>Recent Insights</h2>
+                            <div className='flex flex-1 flex-col sm:flex-row justify-between'>
+                                <h2 className='uppercase mb-3 text-3xl font-medium'>Recent Insights</h2>
                                 <div className='flex'>
-                                    <Button to='/insights' className='uppercase mr-[32px]' type='primary-non-border' >All Insights</Button>
+                                    <Button to='/insights' className='uppercase w-36 mr-28 sm:mr-[32px]' type='primary-non-border' >All Insights</Button>
                                     <ul className='flex align-middle'>
                                         <li className='mr-2'>
                                             <Button type='scroll' 
@@ -95,8 +102,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </InnerContainer>
-                        <Testimonial sliderRef={sliderRef} setSliderRef={setSliderRef}/>
+                        <Testimonial setSliderRef={setSliderRef}/>
                     </Container>
+
                </div>
             </section>
         </>

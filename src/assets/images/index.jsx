@@ -5,6 +5,7 @@ import angleDown from "./angleDown.svg";
 import logo from "./logo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import worker from "./worker.jpg";
 import {
   Building1,
   Building2,
@@ -40,6 +41,7 @@ const images = {
   close,
   heroImg,
   angleDown,
+  worker,
   Building1,
   Building2,
   Building3,
