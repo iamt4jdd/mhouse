@@ -1,20 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-import { Button, InnerContainer } from "~/components"
-import images from "~/assets/images"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { useState } from "react"
+
+import { Button, InnerContainer, Testimonial } from "~/components"
+import images from "~/assets/images"
 
 
-const Container = ({children, className}) => {
+const Container = ({children, className, type='primary'}) => {
 
     return (
-        <div className={`${className} flex flex-1 flex-col sm:flex-row`}>
+        <div className={`${className} flex flex-1  ${type==='col' ? 'flex-col' : 'flex-col sm:flex-row'}`}>
             {children}
         </div>
     )
 }
 
 const Home = () => {
+
+    const [sliderRef, setSliderRef] = useState(null);
+
     return (
         <>
             
@@ -68,21 +72,31 @@ const Home = () => {
                         </div>
                     </Container>
 
-                    <Container className='py-24'>
-                        <InnerContainer className='flex flex-1'>
+                    <Container type='col' className='py-24'>
+                        <InnerContainer className='flex flex-1 mb-10'>
                             <div className='flex flex-1 flex-row justify-between'>
                                 <h2 className='uppercase text-3xl font-medium'>Recent Insights</h2>
                                 <div className='flex'>
-                                    <Button className='uppercase mr-[32px]' type='primary-non-border'>All Insights</Button>
+                                    <Button to='/insights' className='uppercase mr-[32px]' type='primary-non-border' >All Insights</Button>
                                     <ul className='flex align-middle'>
-                                        <li className='mr-2'><Button type='scroll' icon={<FontAwesomeIcon icon={faChevronLeft} />} /></li>
-                                        <li><Button type='scroll' icon={<FontAwesomeIcon icon={faChevronRight} />} /></li>
+                                        <li className='mr-2'>
+                                            <Button type='scroll' 
+                                                icon={<FontAwesomeIcon icon={faChevronLeft} />} 
+                                                onClick={sliderRef?.slickPrev}
+                                            />
+                                        </li>
+                                        <li>
+                                            <Button type='scroll' 
+                                                icon={<FontAwesomeIcon icon={faChevronRight} />}
+                                                onClick={sliderRef?.slickNext}
+                                            />
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </InnerContainer>
+                        <Testimonial sliderRef={sliderRef} setSliderRef={setSliderRef}/>
                     </Container>
-
                </div>
             </section>
         </>
