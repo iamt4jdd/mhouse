@@ -97,7 +97,7 @@ const HeaderMain = () => {
 			return (
 				<Comp key={index} items={item.children}>
 					<span tabIndex="0" className={isRes === 0 ? "sm:flex hidden flex-1" : ""}>
-						<NavComp className="nav-item" type='text' to={item.to}>
+						<NavComp className={`${cx('nav-item')}`} type='text' to={item.to}>
 							{item.title}
 						</NavComp>
 					</span>
@@ -139,7 +139,7 @@ const HeaderMain = () => {
 						</div>
 
 						<div
-							className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-28 right-0 sm:right-[86px] mx-4 my-2
+							className={`${toggle ? 'flex' : 'hidden'} p-6 bg-white absolute top-20 right-0 sm:right-[86px] mx-4 my-2
 							min-w-[140px] rounded-xl sidebar z-[100]`}
 						>
 							<ul>
