@@ -23,7 +23,7 @@ const Home = () => {
         <>
             
             <section id='Home'>
-               <div className=''>
+               <div className='xl:flex xl:flex-col xl:justify-center xl:items-center'>
                     <Container className='md:px-20 pt-24 sm:pb-24'>
                         <div className='relative md:left-14 xl:left-32 p-8 flex flex-col justify-center max-w-[750px]'>
                             <h2 className='font-medium uppercase text-xl sm:text-3xl md:text-5xl tracking-wide'>
@@ -79,7 +79,7 @@ const Home = () => {
                         <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum malesuada, lacinia ante et, suscipit dui. <br/> Aenean pulvinar bibendum massa, vel aliquet diam tincidunt ac.</p>
                     </Container>
 
-                    <Container type='col' className='md:py-24'>
+                    <Container type='col' className='pt-24 md:pb-24'>
                         <InnerContainer className='flex flex-1 mb-10'>
                             <div className='flex flex-1 flex-col sm:flex-row justify-between'>
                                 <h2 className='uppercase mb-3 text-3xl font-medium'>Recent Insights</h2>
