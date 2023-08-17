@@ -57,8 +57,8 @@ const Home = () => {
                             <img src={images.Building22} alt="Building" className='h-full w-full' />
                         </div>
                         <div className='bg-brownBlack md:w-[720px] md:h-[600px] py-4 sm:py-0 sm:my-12'>
-                            <div className='relative sm:right-24 sm:px-20 sm:py-16 md:py-32 flex flex-col bg-brownBlack w-full h-full'>
-                                <h2 className='text-white font-medium text-2xl sm:text-4xl xl:text-7xl'>A TRUSTED,<br/> COLLABORATIVE PARTNER<br/>
+                            <div className='relative sm:right-24 px-2 sm:px-20 sm:py-16 md:py-32 flex flex-col bg-brownBlack w-full h-full'>
+                                <h2 className='text-white font-medium text-2xl sm:text-4xl'>A TRUSTED,<br/> COLLABORATIVE PARTNER<br/>
                                 <strong>FOCUSED ON YOUR GOALS</strong>
                                 </h2>
                                 <p className='text-gray-300 leading-6 text-lg tracking-wide mt-8'>From our industry-leading approaches to safety and quality, 

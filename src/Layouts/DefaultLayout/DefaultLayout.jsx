@@ -12,7 +12,7 @@ const DefaultLayout = ({ children }) => {
         <>
             <div className={cx('layout-container')}>
                 <Header />
-                <div className='bg-gray-200 bg-opacity-100 min-w-full min-h-full'>
+                <div className='bg-gray-200 bg-opacity-100 min-w-full min-h-full '>
                     {children}
                     <ContentEnder/>
                 </div>
