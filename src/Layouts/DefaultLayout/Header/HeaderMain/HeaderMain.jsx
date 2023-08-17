@@ -96,11 +96,11 @@ const HeaderMain = () => {
 
 			return (
 				<Comp key={index} items={item.children}>
-					<span tabIndex="0" className={isRes === 0 ? "sm:flex hidden flex-1" : ""}>
-						<NavComp className={`${cx('nav-item')}`} type='text' to={item.to}>
+					<div tabIndex="0" className={isRes === 0 ? "sm:flex hidden flex-1" : ""}>
+						<NavComp className={`${cx('nav-item')} ${isRes === 1 ? 'text-xl' : ''}`} type='text' to={item.to}>
 							{item.title}
 						</NavComp>
-					</span>
+					</div>
 				</Comp>
 			);
 		});

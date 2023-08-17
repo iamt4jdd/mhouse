@@ -89,7 +89,7 @@ const Testimonial = ({
         {...settings}
         arrows={false}
         ref={setSliderRef}
-        className="flex flex-1 flex-row w-full md:px-[138px]"
+        className="flex flex-1 flex-row w-full xl:w-[1500px] md:px-[138px]"
       >
         {listTestimonial.map((listTestimonials, index) => (
           <div className="px-3 flex items-stretch" key={index}>
