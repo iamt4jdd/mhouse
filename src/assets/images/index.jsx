@@ -6,6 +6,10 @@ import logo from "./logo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import worker from "./worker.jpg";
+import worker2 from "./worker2.jpg";
+import worker3 from "./worker3.jpg";
+import constructing from "./constructing.jpg";
+import equipment from "./equipment.jpg";
 import {
   Building1,
   Building2,
@@ -42,6 +46,10 @@ const images = {
   heroImg,
   angleDown,
   worker,
+  worker2,
+  worker3,
+  constructing,
+  equipment,
   Building1,
   Building2,
   Building3,
