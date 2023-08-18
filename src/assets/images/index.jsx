@@ -8,6 +8,7 @@ import close from "./close.svg";
 import worker from "./worker.jpg";
 import worker2 from "./worker2.jpg";
 import worker3 from "./worker3.jpg";
+import plan from "./plan.jpg";
 import constructing from "./constructing.jpg";
 import equipment from "./equipment.jpg";
 import {
@@ -48,6 +49,7 @@ const images = {
   worker,
   worker2,
   worker3,
+  plan,
   constructing,
   equipment,
   Building1,
