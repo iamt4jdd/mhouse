@@ -23,27 +23,26 @@ const NAV_ITEM = [
 	},
 	{
 		title: "Services",
-		to: "/services",
 		children: [
 			{
 				title: "HomeStay Design",
-				to: "/services/#home-stay-design",
+				to: "/services/home-stay-design",
 			},
 			{
 				title: "Interior Design",
-				to: "/services/#interior-design",
+				to: "/services/interior-design",
 			},
 			{
 				title: "Renovation",
-				to: "/services/#renovation",
+				to: "/services/renovation",
 			},
 			{
 				title: "Consulting",
-				to: "/services/#consulting",
+				to: "/services/consulting",
 			},
 			{
 				title: "Construction",
-				to: "/services/#construction",
+				to: "/services/construction",
 			},
 		],
 	},

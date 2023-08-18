@@ -1,1 +1,5 @@
-export { default } from './Services'
+export { default as Construction } from './Construction'
+export { default as Consulting } from './Consulting'
+export { default as HomeStayDesign } from './HomeStayDesign'
+export { default as InteriorDesign } from './InteriorDesign'
+export { default as Renovation } from './Renovation'
