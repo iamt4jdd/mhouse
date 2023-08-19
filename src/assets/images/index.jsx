@@ -34,6 +34,12 @@ import {
   Building20,
   Building21,
   Building22,
+  Building23,
+  Building24,
+  Building25,
+  Building26,
+  Building27,
+  Building28,
 } from "./Building";
 import heroImg from './hero-img.png'
 
@@ -74,6 +80,12 @@ const images = {
   Building20,
   Building21,
   Building22,
+  Building23,
+  Building24,
+  Building25,
+  Building26,
+  Building27,
+  Building28,
 };
 
 export default images;
