@@ -2,8 +2,8 @@ import Slider from "react-slick";
 
 import images from "~/assets/images";
 
-const Testimonial = ({
-  listTestimonial = [
+const SliderRenderer = ({
+  listSlider = [
     {
       title: "MHouse Completes Largest Public Port Project on Texas Coast",
       image: images.Building1,
@@ -48,6 +48,7 @@ const Testimonial = ({
     },
   ],
   setSliderRef,
+  type = 'primary',
 }) => {
   const settings = {
     dots: false,
@@ -91,25 +92,29 @@ const Testimonial = ({
         ref={setSliderRef}
         className="flex flex-1 flex-row w-full xl:w-[1500px] md:px-[138px]"
       >
-        {listTestimonial.map((listTestimonials, index) => (
+        {listSlider.map((slider, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="">
                 <div className="">
                   <img
                     className="w-full h-[242px]"
-                    src={listTestimonials.image}
+                    src={slider.image}
                     alt="Icon People"
                   />
                 </div>
-                <div className="my-4 font-medium text-red-900 text-base uppercase">
-                    <p className="">{listTestimonials.release}</p>
-                </div>
-                <div className="my-4 font-bold text-xl">
-                    <h3 className="">{listTestimonials.title}</h3>
-                </div>
-                <div className="font-light text-gray-600">
-                    <p className="">{listTestimonials.content}</p>
-                </div>
+                {(type === 'primary') && 
+                <>
+                  <div className="my-4 font-medium text-red-900 text-base uppercase">
+                    <p className="">{slider.release}</p>
+                  </div>
+                  <div className="my-4 font-bold text-xl">
+                      <h3 className="">{slider.title}</h3>
+                  </div>
+                  <div className="font-light text-gray-600">
+                      <p className="">{slider.content}</p>
+                  </div>
+                </>
+                }
               </div>
           </div>
         ))}
@@ -118,4 +123,4 @@ const Testimonial = ({
   );
 };
 
-export default Testimonial;
+export default SliderRenderer;

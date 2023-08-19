@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
 
-import { Button, InnerContainer, Testimonial } from "~/components"
+import { Button, InnerContainer, SliderRenderer } from "~/components"
 import images from "~/assets/images"
 
 
@@ -102,7 +102,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </InnerContainer>
-                        <Testimonial setSliderRef={setSliderRef}/>
+                        <SliderRenderer setSliderRef={setSliderRef}/>
                     </Container>
 
                </div>
