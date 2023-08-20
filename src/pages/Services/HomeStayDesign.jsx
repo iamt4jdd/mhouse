@@ -101,7 +101,7 @@ const SliderRenderer = ({
         className="flex flex-1 flex-row w-full xl:w-[1500px] md:px-[138px]"
       >
         {listSlider.map((slider, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
+          <div className="md:px-3 flex items-stretch" key={index}>
             <div className="">
                 <div className="">
                   <img
