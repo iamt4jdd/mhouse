@@ -29,11 +29,11 @@ const AboutUs = () => {
                 <ContentRenderer>
                     <div className='flex flex-1 flex-col flex-grow justify-center p-6 min-w-[50%]'>
                         <h2 className='font-medium text-2xl sm:text-4xl '>
-                            GIỚI THIỆU 
+                            WELCOME TO 
                             <span className="relative bottom-1 text-gray-400"> | </span><span className='text-amber-500'>MHouse</span>
                         </h2>
                         <TextField>
-                            Tại <span className='text-amber-500'>MHouse</span>, chúng tôi tự hào là một công ty chuyên về thiết kế và xây dựng homestay.
+                            At <span className='text-amber-500'>MHouse</span>, chúng tôi tự hào là một công ty chuyên về thiết kế và xây dựng homestay.
                         </TextField>
                         <TextField>
                             Đam mê của chúng tôi nằm trong việc tạo ra những không gian độc đáo và đáng nhớ, 
