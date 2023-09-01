@@ -2,23 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
     margin: 5px;
     position: relative;
     background: center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     border-radius: 50%;
-    cursor: pointer;
     padding: 3px;
-    color: #fff;
-    border-color: #fff;
     border-width: 1px;
     font-size: 18px;
 
-    &:hover {
-        background-color: #000;
-    }
 }
 

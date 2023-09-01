@@ -1,20 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Fragment } from "react";
 
 import { publicRoutes } from "~/routes";
 import { DefaultLayout } from "./Layouts";
 
-const ScrollToTop = () => {
+const debounce = (func, delay) => {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func(...args);
+    }, delay);
+  };
+};
 
+const ScrollToTop = () => {
   const { pathname } = useLocation();
 
+  const smoothScrollToTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  const debouncedScrollToTop = debounce(smoothScrollToTop, 100);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    debouncedScrollToTop();
+  }, [pathname, debouncedScrollToTop]);
 
   return null;
-}
+};
 
 function App() {
   return (

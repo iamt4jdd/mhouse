@@ -1,11 +1,50 @@
 import classNames from "classnames/bind"
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-import { InnerContainer, IconRenderer } from "~/components"
+
+import { Icon } from "~/components"
+import { InnerContainer } from "~/components"
 import styles from './FooterMain.module.scss'
 import images from "~/assets/images"
 
 const cx = classNames.bind(styles)
 
+
+
+const ICON_ITEM = [
+    {
+        title: 'Facebook',
+        icon: faFacebook,
+        href: 'https://www.facebook.com/'
+    },
+    {
+        title: 'Instagram',
+        icon: faInstagram,
+        href: 'https://www.instagram.com/'
+    },
+    {
+        title: 'Youtube',
+        icon: faYoutube,
+        href: 'https://www.youtube.com/'
+    }
+
+]
+
+const IconRenderer = () => {
+
+    const renderItems = () => {
+        return ICON_ITEM.map((item, index) => {
+  
+            return <Icon key={index} href={item.href} icon={item.icon} 
+            iconClassName='text-white border-white w-[28px] h-[28px] hover:bg-black cursor-pointer'/>
+        })
+    }
+    return (
+        <>
+                {renderItems()}
+        </>
+    )
+}
 
 const ContentContainer = ({
     children,
