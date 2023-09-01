@@ -8,6 +8,8 @@ import close from "./close.svg";
 import worker from "./worker.jpg";
 import worker2 from "./worker2.jpg";
 import worker3 from "./worker3.jpg";
+import worker4 from "./worker4.png";
+import officeMan from "./office-man.png";
 import plan from "./plan.jpg";
 import constructing from "./constructing.jpg";
 import equipment from "./equipment.jpg";
@@ -55,6 +57,8 @@ const images = {
   worker,
   worker2,
   worker3,
+  worker4,
+  officeMan,
   plan,
   constructing,
   equipment,

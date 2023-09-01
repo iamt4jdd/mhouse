@@ -15,7 +15,7 @@ const Menu = ({children, items=[]}) => {
     }
 
     return (
-        <>
+        <div>
             <Tippy
                 interactive
                 delay={[0, 1000]}
@@ -32,7 +32,7 @@ const Menu = ({children, items=[]}) => {
             >
                  {children}
             </Tippy>
-        </>
+        </div>
     )
 
 }

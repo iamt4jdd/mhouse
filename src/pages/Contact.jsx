@@ -23,7 +23,7 @@ const Input = ({placehoder}) => {
 const Contact = () => {
     return (
         <>
-            <InnerContainer className='py-8' type=''>
+            <InnerContainer className='pt-28' type=''>
                 <div className='min-w-full min-h-full flex flex-1'>
                     <ContentCol>
                         <h1 className='w-full mt-0'>CONTACT US</h1>

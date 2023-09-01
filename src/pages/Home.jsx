@@ -102,7 +102,53 @@ const Home = () => {
                                 </div>
                             </div>
                         </InnerContainer>
-                        <SliderRenderer setSliderRef={setSliderRef}/>
+                        <SliderRenderer setSliderRef={setSliderRef} 
+                            listSlider =
+                            {[
+                                {
+                                title: "MHouse Completes Largest Public Port Project on Texas Coast",
+                                image: images.Building1,
+                                area: "News release",
+                                content:
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a ante ac ipsum feugiat varius ut sit amet neque. Quisque eleifend pharetra lectus ac eleifend. ",
+                                },
+                                {
+                                title: "Challenges and Opportunities of Water in Houston",
+                                image: images.Building2,
+                                area: "News release",
+                                content:
+                                    "Fusce iaculis magna sit amet nisi tempor, a hendrerit tortor malesuada. Integer eget dolor eu felis sollicitudin commodo finibus eget felis.",
+                                },
+                                {
+                                title: "MHouse Completes Barbours Cut Terminal Container Yard 3N",
+                                image: images.Building3,
+                                area: "Insights",
+                                content:
+                                    "Etiam lobortis ligula et ultrices blandit. Nulla mattis ligula ut tortor euismod, eget posuere tortor dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra",
+                                },
+                                {
+                                title: "MHouse Awarded Texas Port Construction Contracts",
+                                image: images.Building4,
+                                area: "News release",
+                                content:
+                                    "Vivamus semper elementum quam, sed maximus dolor interdum in. Integer rutrum iaculis felis eu accumsan.",
+                                },
+                                {
+                                title: "New Craft Workforce Center in Chandler, Ariz. Unveiled",
+                                image: images.Building5,
+                                area: "News release",
+                                content:
+                                    "In hac habitasse platea dictumst. Per inceptos himenaeos. Etiam ac fringilla ex.",
+                                },
+                                {
+                                title: "MHouse Designed and Constructed Building in Chandler",
+                                image: images.Building6,
+                                area: "News release",
+                                content:
+                                    "Donec porta ligula varius ex facilisis pulvinar. Quisque id vulputate leo, id interdum erat. Vivamus sapien dolor, tempus nec turpis vitae, egestas dapibus quam.",
+                                },
+                            ]}
+                        />
                     </Container>
 
                </div>

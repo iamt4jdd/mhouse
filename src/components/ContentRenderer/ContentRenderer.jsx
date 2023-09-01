@@ -3,8 +3,8 @@ import React from "react";
 const ContentRenderer = ({image, area, title, content, type , className}) => {
   return (
     <div className={`${className} flex items-stretch`}>
-      <div className="">
-        <div className="">
+      <div className="w-full">
+        <div className="w-full">
           <img className="w-full h-[242px]" src={image} alt="Icon People" />
         </div>
         {type === "primary" && (
