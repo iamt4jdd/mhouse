@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <>
             
-            <section id='Home'>
+            <section id='home'>
                <div className='xl:flex xl:flex-col xl:justify-center xl:items-center'>
                     <Container className='md:px-20 pt-24 sm:pb-24'>
                         <div className='relative md:left-14 xl:left-32 p-8 flex flex-col justify-center max-w-[750px]'>

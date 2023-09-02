@@ -16,7 +16,7 @@ const debounce = (func, delay) => {
 };
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathName = '' } = useLocation();
 
   const smoothScrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -25,8 +25,10 @@ const ScrollToTop = () => {
   const debouncedScrollToTop = debounce(smoothScrollToTop, 100);
 
   useEffect(() => {
-    debouncedScrollToTop();
-  }, [pathname, debouncedScrollToTop]);
+    if (!pathName.includes("#")) {
+      debouncedScrollToTop();
+    }
+  }, [pathName, debouncedScrollToTop]);
 
   return null;
 };
