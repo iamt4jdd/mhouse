@@ -32,18 +32,6 @@ const NAV_ITEM = [
 				title: "Interior Design",
 				to: "/services/interior-design",
 			},
-			{
-				title: "Renovation",
-				to: "/services/renovation",
-			},
-			{
-				title: "Consulting",
-				to: "/services/consulting",
-			},
-			{
-				title: "Construction",
-				to: "/services/construction",
-			},
 		],
 	},
 	{

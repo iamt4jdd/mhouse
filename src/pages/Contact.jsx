@@ -12,9 +12,9 @@ const ContentCol = ({children}) => {
     )
 }
 
-const Input = ({placehoder}) => {
+const Input = ({placeholder}) => {
     return (
-        <input placeholder={placehoder} className='w-full h-[40px] mb-[15px] px-[15px] border border-gray-300 shadow-inner rounded-sm'></input>
+        <input placeholder={placeholder} className='w-full h-[40px] mb-[15px] px-[15px] border border-gray-300 shadow-inner rounded-sm'></input>
     )
 }
 
@@ -46,9 +46,9 @@ const Contact = () => {
                         </p>
                     </ContentCol>
                     <ContentCol>
-                        <Input placehoder='Full name'/>
-                        <Input placehoder='Email'/>
-                        <Input placehoder='Phone number'/>
+                        <Input placeholder='Full name'/>
+                        <Input placeholder='Email'/>
+                        <Input placeholder='Phone number'/>
                         <textarea placeholder='Main content' className='w-full h-[140px] mb-[15px] p-[15px] border border-gray-300 shadow-inner rounded-sm'></textarea>
                         <Button className='w-[120px] h-[40px]'>Submit</Button>
                     </ContentCol>
