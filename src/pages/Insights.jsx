@@ -101,7 +101,7 @@ const Insights = () => {
                         placeholder:text-gray-600 placeholder:font-semibold placeholder:text-2xl'/>
                     </div>
                     <div className='flex border-b-2 border-gray-600 pt-7'>
-                        <select className='w-full bg-transparent outline-none w-[200px] font-semibold'>
+                        <select className='w-full bg-transparent outline-none md:w-[200px] font-semibold'>
                             <option value="All" selected="selected">All Articles</option>
                             <option value="10">Editorial</option>
                             <option value="11">Event</option>
