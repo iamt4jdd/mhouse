@@ -63,7 +63,7 @@ const AboutUs = () => {
             Building Company
           </p>
         </div>
-        <div className="flex flex-col md:flex-row md:absolute md:top-56 md:right-16 xl:relative xl:top-0 xl:right-0">
+        <div className="flex flex-col sm:flex-row md:absolute md:top-56 md:right-16 xl:relative xl:top-0 xl:right-0">
           <AboutItem title="Our Vision" image={images.worker4} to="/about-us/#vision" content="Innovative Transformation" className="mr-8" />
           <AboutItem title="Our Values" image={images.officeMan} to="/about-us/#value" content="Integrity, Excellence, Collaboration" />
         </div>
@@ -85,12 +85,12 @@ const AboutUs = () => {
 
       <section id="value" className="flex flex-col px-2 md:px-28 pt-20">
         <div className="flex flex-col items-center p-8">
-          <h1 className="uppercase text-4xl md:text-5xl m-0 mb-8">
+          <h1 className="uppercase text-4xl sm:text-5xl m-0 mb-8 text-center">
             The benefit of <strong>Choosing our services </strong>
           </h1>
           <p className="w-[400px] text-lg text-center text-gray-600 px-8">Taking care of our clients starts with taking care of our fellow owners.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-y-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-y-16">
           {BenefitItems.map((item, index) => (
             <Icon key={index} icon={item.icon} title={item.title} type='normal' 
             className='flex flex-col items-center'
@@ -100,7 +100,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section id="vision" className="px-2 py-10 md:py-32 md:px-56">
+      <section id="vision" className="px-2 py-10 sm:py-32 md:px-56">
         <div className="flex flex-col items-center w-full">
           <h1 className="uppercase text-5xl text-center">
             OUR VISION: Redefining Construction with
