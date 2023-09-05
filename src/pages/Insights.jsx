@@ -56,33 +56,38 @@ const projectItems = [
 ]
 
 
-const projectItems2 = [
+const mostReadItems = [
     {
         title: "MHouse Completes Largest Public Port Project on Texas Coast",
         image: images.Building1,
-        article: "News release",
-        content: 'Atlanta, GA'    
+        article: "News release",    
     },
     {
         title: "MHouse Completes Largest Public Port Project on Texas Coast",
         image: images.Building1,
-        article: "Editorial",
-        content: 'Atlanta, AZ'    
+        article: "Editorial",    
     },
     {
         title: "MHouse Completes Largest Public Port Project on Texas Coast",
         image: images.Building1,
-        article: "Event",
-        content: 'Atlanta, KS'    
+        article: "Event",    
     },
     {
         title: "MHouse Completes Largest Public Port Project on Texas Coast",
         image: images.Building1,
-        article: "News release",
-        content: 'Atlanta, KS'    
+        article: "News release",    
     },
 ]
 
+
+const ItemRenderer = (item) => {
+    return item.map((item, index) => (
+        <ContentRenderer key={index} image={item.image} article={item.article} 
+        title={item.title} content={item.content} type='primary'
+        />
+    ))
+
+}
 
 
 const Insights = () => {
@@ -112,21 +117,13 @@ const Insights = () => {
             </div>
             <div className='flex flex-col md:flex-row pb-24'>
                 <div className='px-2 md:pl-28 md:pr-16 py-24 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-16'>
-                    {projectItems.map((item, index) => (
-                           <ContentRenderer key={index} image={item.image} article={item.article} 
-                           title={item.title} content={item.content} type='primary'
-                           />
-                    ))}
+                    {ItemRenderer(projectItems)}
                 </div>
                 <div className='mx-10 sm:mx-28 mb-5 border-t-2 md:hidden border-gray-400'>&nbsp;</div>
                 <div className='border-l-2 border-gray-400 px-16 md:pb-48'>
                     <h1 className='text-2xl font-semibold uppercase mb-12'>Most Read</h1>
                     <div className='grid grids-cols-1 sm:grid-cols-2 md:sm:grid-cols-1 gap-x-8 gap-y-20'>
-                        {projectItems2.map((item, index) => (
-                            <ContentRenderer  key={index} image={item.image} article={item.article} 
-                            title={item.title} type='primary'
-                            />
-                        ))}
+                        {ItemRenderer(mostReadItems)}
                     </div>
                 </div>
             </div>
