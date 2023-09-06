@@ -71,22 +71,17 @@ const HeaderMain = () => {
 		return NAV_ITEM.map((item, index) => {
 
 			let Comp = "div";
-			let NavComp = Link;
 			
 			if (item.children) {
 				Comp = Menu;
 			}
 
-			if (isRes === 0) {
-				NavComp = Button
-			}
-
 			return (
 				<Comp key={index} items={item.children}>
 					<div tabIndex="0" className={isRes === 0 ? "sm:flex hidden flex-1" : ""}>
-						<NavComp className={`${cx('nav-item')} ${isRes === 1 ? 'text-xl' : ''}`} type='text' to={item.to}>
+						<Button className={`${cx('nav-item')} ${isRes === 1 ? 'text-xl' : ''}`} type={isRes === 0 ? 'text' : 'text-black'} to={item.to}>
 							{item.title}
-						</NavComp>
+						</Button>
 					</div>
 				</Comp>
 			);

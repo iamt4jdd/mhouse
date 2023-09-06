@@ -11,11 +11,11 @@ const InteriorDesign = () => {
     <>
 
       <div
-        className={`md:h-[550px] px-2 md:px-24 pt-28`}
+        className={`md:h-[550px] px-2 md:px-24 py-28`}
         style={{ backgroundImage: `url(${images.plan})` }}
       >
         <div className="flex flex-col max-w-[880px]">
-          <h1 className="uppercase text-5xl">
+          <h1 className="uppercase text-4xl md:text-5xl">
             We present an <strong>outstanding portfolio</strong> of
             Extraordinary{" "}
             <strong className="text-greenMhouse">Interior designs </strong>
@@ -32,9 +32,9 @@ const InteriorDesign = () => {
         </div>
       </div>
 
-      <div className='pt-4 md:py-28'>
-        <div className='flex justify-center mb-6'>
-          <h1 className="uppercase text-5xl max-w-[1000px]">
+      <div className='px-2 md:py-28'>
+        <div className='flex justify-center md:mb-6'>
+          <h1 className="uppercase text-4xl md:text-5xl max-w-[1000px]">
               selection of <strong className="text-greenMhouse">Interior designs </strong> options.
           </h1>
         </div>
@@ -65,7 +65,7 @@ const InteriorDesign = () => {
         </div>
       </div>
 
-      <div className='px-2 md:px-56 pt-4 md:pt-0 md:pb-28'>
+      <div className='px-2 md:px-56 pt-28 md:pt-0 md:pb-28'>
         <h2 className='uppercase text-5xl mb-8'>
           <strong className='text-greenMhouse'>Our Interior Design services</strong>
           <br/><strong>encompasses:</strong>

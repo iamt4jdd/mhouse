@@ -89,10 +89,10 @@ const FooterMain = () => {
                     <ContentContainer title='About us' image={images.logo} className='flex-grow'/>
                     <ContentContainer title='Contact Information' size='large' className='flex-grow'>
                         <p className={cx('contact-info')}>
-                            <span>Công ty TNHH Tư vấn thiết kế xây dựng <span className='text-amber-500'>Haha</span></span><br />
-                            <span>Address: <span>10 Đường số 41, Bình Đông, Quận 8, TPHCM</span></span><br />
+                            <span><span className='text-amber-500'>MHouse</span> Building Company</span><br />
+                            <span>Address: <span>Ho Chi Minh City</span></span><br />
                             <br /><br />
-                            <span>Tel/Zalo: <span>0327853764</span></span><br />
+                            <span>Tel/Zalo: <span>0359894512</span></span><br />
                             <span>Email: <span>Test1234@gmail.com</span></span>
                         </p>
                     </ContentContainer>

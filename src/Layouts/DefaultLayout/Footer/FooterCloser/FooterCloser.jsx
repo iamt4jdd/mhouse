@@ -11,8 +11,8 @@ const FooterCloser = () => {
                 <InnerContainer type=''>
                     <div className={`${cx('menu-footer-container')} flex flex-col flex-1 items-center mh-[40px]`}>
                         <ul className="flex justify-center space-x-4 uppercase text-sm text-gray-700">
-                            <li>Điều khoản sử dụng</li>
-                            <li>Chính sách bảo mật</li>
+                            <li>All Rights Reserved.</li>
+                            <li>Privacy Policy</li>
                         </ul>
                         <div className={`${cx('copyright-footer')} text-gray-700 mt-2`}>
                         Copyright 2023 © 
