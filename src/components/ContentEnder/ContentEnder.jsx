@@ -8,8 +8,8 @@ const ContentEnder = () => {
     <>
       <div className='xl:flex xl:flex-col xl:justify-center xl:items-center'>
         <div className='relative py-24 flex flex-1 flex-col md:flex-row xl:justify-center'>
-          <div className="bg-gray-200 md:w-[720px] md:h-[450px] md:my-20 z-10">
-              <div className="relative md:left-24 justify-center items-center flex flex-col bg-gray-200 md:shadow-2xl w-full h-full">
+          <div className="bg-gray-200 md:w-[720px] md:h-[450px] md:my-20 z-10 ">
+              <div className="relative md:left-24 justify-center items-center flex flex-col bg-gray-200 shadow-2xl-top md:shadow-2xl w-full h-full">
                   <h2 className="text-gray-800 mt-5 font-medium text-xl xl:text-3xl">
                       Let's Talk
                   </h2>

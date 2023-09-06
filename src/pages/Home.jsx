@@ -76,7 +76,9 @@ const Home = () => {
                         <h1 className='uppercase font-bold text-3xl my-3'>If you can <span className='text-red-400'>dream</span> it</h1>
                         <h1 className='uppercase font-bold text-3xl my-3'>We can <span className='text-amber-800'>build</span> it</h1>
                         <h1 className='uppercase font-medium text-4xl text-center'>Make your <strong>HomeStay Dream</strong> come true <br/>with <strong className='text-greenMhouse'>MHouse</strong></h1>
-                        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum malesuada, lacinia ante et, suscipit dui. <br/> Aenean pulvinar bibendum massa, vel aliquet diam tincidunt ac.</p>
+                        <p className='text-center'>With MHouse, your vision for the perfect home becomes a reality. 
+                        Our expert team is dedicated to turning<br/> your dreams into a beautifully crafted and functional 
+                        homestay that exceeds your expectations.</p>
                     </Container>
 
                     <Container type='col' className='pt-24 md:pb-24'>
