@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContentRenderer = ({image, article, title, content, type , className}) => {
+const ContentRenderer = ({image, article, title, area, content, type , className}) => {
   return (
     <div className={`${className} max-h-[388.4px] flex`}>
       <div className="w-full">
@@ -15,9 +15,16 @@ const ContentRenderer = ({image, article, title, content, type , className}) => 
             <div className="my-4 font-bold text-xl">
               <h3 className="">{title}</h3>
             </div>
-            <div className="font-light text-gray-600">
-              <p className="">{content}</p>
-            </div>
+            {content && (
+              <div className="font-light text-gray-600">
+                <p className="">{content}</p>
+              </div> 
+            )}
+            {area && (
+              <div className="font-light text-gray-600">
+                <p className="">{area}</p>
+              </div> 
+            )}
           </>
         )}
       </div>

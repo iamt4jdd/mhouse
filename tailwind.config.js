@@ -13,6 +13,7 @@ module.exports = withMT({
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         brownBlack: "rgba(46, 42, 37, 1)",
+        blur: "rgba(0, 0, 0, 0.5)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
