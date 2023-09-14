@@ -18,8 +18,6 @@ const Input = ({placeholder}) => {
     )
 }
 
-
-
 const Contact = () => {
     return (
         <>
@@ -49,7 +47,7 @@ const Contact = () => {
                         <Input placeholder='Full name'/>
                         <Input placeholder='Email'/>
                         <Input placeholder='Phone number'/>
-                        <textarea placeholder='Main content' className='w-full h-[140px] mb-[15px] p-[15px] border border-gray-300 shadow-inner rounded-sm'></textarea>
+                        <textarea placeholder='Main content' className='resize-none placeholder:w-full w-full h-[140px] mb-[15px] p-[15px] border border-gray-300 shadow-inner rounded-sm'></textarea>
                         <Button className='w-[120px] h-[40px]'>Submit</Button>
                     </ContentCol>
                 </div>

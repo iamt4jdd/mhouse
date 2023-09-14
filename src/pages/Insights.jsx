@@ -107,12 +107,12 @@ const Insights = () => {
                     </div>
                     <div className='flex border-b-2 border-gray-600 pt-7'>
                         <select className='w-full bg-transparent outline-none md:w-[200px] font-semibold'>
-                            <option value="All" selected="selected">All Articles</option>
+                            <option value="All" defaultValue>All Articles</option>
                             <option value="10">Editorial</option>
                             <option value="11">Event</option>
                             <option value="12">In the News</option><option value="13">News Release</option>
                         </select>
-                    </div>
+                    </div>  
                 </div>
             </div>
             <div className='flex flex-col md:flex-row pb-24'>

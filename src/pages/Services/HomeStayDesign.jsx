@@ -24,8 +24,8 @@ const Items = [
 const HomestayItem = memo(({ item, index }) => {
   return (
     <li className='' key={index}>
-      <img src={item.image} alt={`Building ${index}`} className='w-[390px] h-[480px] mb-6' loading='lazy'/>
-      <h3 className='mb-4 md:mb-0 font-bold text-2xl max-w-[390px] text-center'>{item.title}</h3>
+      <img src={item.image} alt={`Building ${index}`} className='h-[400px] w-full mb-6' loading='lazy'/>
+      <h3 className='mb-4 md:mb-0 font-bold text-2xl text-center'>{item.title}</h3>
     </li>
   );
 });
@@ -53,7 +53,7 @@ const HomestayDesign = () => {
       </div>
 
       <div className='md:px-24 py-28 '>
-        <ul className='flex flex-1 flex-col md:flex-row justify-evenly'>
+        <ul className='grid grid-cols-1 sm:grid-cols-3 gap-8'>
           {Items.map((item, index) => (
             <HomestayItem key={index} item={item} index={index} />
           ))}
