@@ -11,7 +11,7 @@ const InteriorDesign = () => {
     <>
 
       <div
-        className={`md:h-[550px] px-2 md:px-24 py-28`}
+        className={`md:h-[550px] px-2 md:px-32 py-28`}
         style={{ backgroundImage: `url(${images.plan})` }}
       >
         <div className="flex flex-col max-w-[880px]">
@@ -38,6 +38,7 @@ const InteriorDesign = () => {
               selection of <strong className="text-greenMhouse">Interior designs </strong> options.
           </h1>
         </div>
+        <div className='xl:flex xl:justify-center xl:px-32'>
         <SliderRenderer setSliderRef={setSliderRef} listSlider={[
           {
             image: images.interior1
@@ -59,7 +60,8 @@ const InteriorDesign = () => {
           },    
           ]}
         />
-        <div className='flex flex-1 justify-between md:px-[150px] mt-6'>
+        </div>
+        <div className='flex flex-1 justify-between md:px-[150px] xl:px-[140px] mt-6'>
           <Button onClick={sliderRef?.slickPrev} type='primary-non-border' className='w-[150px]'>Previous</Button>
           <Button onClick={sliderRef?.slickNext} type='primary-non-border' className='w-[150px]'>Next</Button>
         </div>

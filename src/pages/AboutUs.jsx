@@ -63,7 +63,7 @@ const AboutUs = () => {
             Building Company
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row md:absolute md:top-56 md:right-16 xl:relative xl:top-0 xl:right-0">
+        <div className="flex flex-col sm:flex-row md:absolute md:top-56 md:right-16 xl:relative xl:top-0 xl:left-32">
           <AboutItem title="Our Vision" image={images.worker4} to="/about-us/#vision" content="Innovative Transformation" className="mr-8" />
           <AboutItem title="Our Values" image={images.officeMan} to="/about-us/#value" content="Integrity, Excellence, Collaboration" />
         </div>

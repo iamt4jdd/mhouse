@@ -74,28 +74,30 @@ const HomestayDesign = () => {
       </div>
 
       <div className=''>
-        <SliderRenderer setSliderRef={setSliderRef} listSlider={[
-          {
-            image: images.Building21
-          },
-          {
-            image: images.Building22
-          },    
-          {
-            image: images.Building23
-          },    
-          {
-            image: images.Building24
-          },    
-          {
-            image: images.Building25
-          },    
-          {
-            image: images.Building26
-          },    
-          ]}
-        />
-        <div className='flex flex-1 justify-between md:px-[150px] mt-6'>
+        <div className='xl:flex xl:justify-center xl:px-32'>
+          <SliderRenderer setSliderRef={setSliderRef} listSlider={[
+            {
+              image: images.Building21
+            },
+            {
+              image: images.Building22
+            },    
+            {
+              image: images.Building23
+            },    
+            {
+              image: images.Building24
+            },    
+            {
+              image: images.Building25
+            },    
+            {
+              image: images.Building26
+            },    
+            ]}
+          />
+        </div>
+        <div className='flex flex-1 justify-between md:px-[140px] mt-6'>
           <Button onClick={sliderRef?.slickPrev} type='primary-non-border' className='w-[150px]'>Previous</Button>
           <Button onClick={sliderRef?.slickNext} type='primary-non-border' className='w-[150px]'>Next</Button>
         </div>
