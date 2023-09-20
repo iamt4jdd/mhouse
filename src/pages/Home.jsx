@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
 
-import { Button, InnerContainer, SliderRenderer } from "~/components"
+import { Button, SliderRenderer } from "~/components"
 import images from "~/assets/images"
 
 
@@ -24,8 +24,8 @@ const Home = () => {
             
             <section id='home'>
                <div className='xl:flex xl:flex-col xl:justify-center xl:items-center'>
-                    <Container className='md:px-20 pt-24 sm:pb-24'>
-                        <div className='relative md:left-14 xl:left-32 p-8 flex flex-col justify-center max-w-[750px]'>
+                    <Container className='xl:w-[1500px] md:px-20 xl:px-0 pt-24 sm:pb-24 xl:flex xl:justify-between'>
+                        <div className='relative p-8 flex flex-col justify-center max-w-[750px]'>
                             <h2 className='font-medium uppercase text-xl sm:text-3xl md:text-5xl tracking-wide'>
                                 <strong className='text-3xl sm:text-5xl md:text-7xl'>We Love to build.</strong>
                                 <br/>
@@ -40,7 +40,7 @@ const Home = () => {
                             </div>
                         </div>
                         
-                        <div className='relative md:left-32 xl:left-96 w-[500px]'>
+                        <div className='relative md:left-32 xl:left-0 w-[500px]'>
                             <div className='grid grid-rows-2 grid-flow-col gap-3'>
                                 <img src={images.Building7} alt="Building" className='row-span-3' />
                                 <img src={images.Building2} alt="Building" className='' />
@@ -82,7 +82,7 @@ const Home = () => {
                     </Container>
 
                     <Container type='col' className='pt-24 md:pb-24'>
-                        <InnerContainer className='flex flex-1 mb-10'>
+                        <div className='flex flex-1 mb-10 px-3 md:px-[150px] xl:px-0'>
                             <div className='flex flex-1 flex-col sm:flex-row justify-between'>
                                 <h2 className='uppercase mb-3 text-3xl font-medium'>Recent Insights</h2>
                                 <div className='flex'>
@@ -103,7 +103,7 @@ const Home = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </InnerContainer>
+                        </div>
                         <SliderRenderer setSliderRef={setSliderRef} 
                             listSlider =
                             {[
