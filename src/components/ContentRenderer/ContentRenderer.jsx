@@ -5,7 +5,7 @@ const ContentRenderer = ({image, article, title, area, content, type , className
     <div className={`${className} max-h-[388.4px] flex`}>
       <div className="w-full">
         <div className="w-full">
-          <img className="w-full h-[242px]" src={image} alt="Icon People" />
+          <img className="w-full h-[242px]" src={image} alt={title} />
         </div>
         {type === "primary" && (
           <>
@@ -22,7 +22,7 @@ const ContentRenderer = ({image, article, title, area, content, type , className
             )}
             {area && (
               <div className="font-light text-gray-600">
-                <p className="">{area}</p>
+                <p className="uppercase text-sm font-bold">{area}</p>
               </div> 
             )}
           </>

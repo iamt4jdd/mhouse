@@ -2,6 +2,7 @@ import {
     Home,
     AboutUs,
     Project,
+    AllProjects,
     Insights,
     Contact,
 } from '~/pages'
@@ -16,7 +17,8 @@ const publicRoutes = [
     { path: '/about-us', component: AboutUs},
     { path: '/services/home-stay-design', component: HomeStayDesign},
     { path: '/services/interior-design', component: InteriorDesign},
-    { path: '/project', component: Project},
+    { path: '/project', component: AllProjects},
+    { path: '/project/:projectId', component: Project},
     { path: '/insights', component: Insights},
     { path: '/contact', component: Contact},
 ]
