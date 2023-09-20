@@ -30,7 +30,7 @@ const ContentEnder = () => {
           <div className="flex flex-col justify-center md:w-[1500px] md:h-[600px]">
               <img src={images.worker2} alt="Building" className="h-full w-full" />
           </div>
-          <div className='flex flex-col items-center md:block shadow-2xl md:shadow-none md:absolute bottom-24 left-2 md:right-16 md:bottom-48'>
+          <div className='flex flex-col items-center md:block shadow-2xl md:shadow-none md:absolute bottom-24 left-2 md:right-16 md:bottom-48 xl:right-48'>
               <h1 className='leading-12 font-bold tracking-wide md:text-white md:text-right uppercase mt-8 md:text-7xl'><strong>Let's Build</strong> <br/> Together</h1>
               <div className="my-5 sm:mt-10 flex md:justify-end">
                   <Button

@@ -59,7 +59,7 @@ const PostProject = () => {
         postData.append('image', formData.image);
 
         try {
-            await axios.post('http://localhost:3002/project/', postData, {
+            await axios.post('https://mhouse-api.onrender.com/project/', postData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

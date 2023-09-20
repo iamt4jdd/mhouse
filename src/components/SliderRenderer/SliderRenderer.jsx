@@ -47,7 +47,7 @@ const SliderRenderer = ({
         {...settings}
         arrows={false}
         ref={setSliderRef}
-        className="flex flex-1 flex-row w-full xl:w-[1500px] md:px-[138px]"
+        className="flex flex-1 flex-row w-full xl:w-[1500px] md:px-[138px] xl:px-0"
       >
         {listSlider.map((slider, index) => (
             <ContentRenderer key={index} image={slider.image} area={slider.area} 

@@ -87,8 +87,8 @@ const ItemRenderer = (item) => {
 
 const Insights = () => {
   return (
-    <div className="xl:flex flex-col md:flex-row items-center">
-      <div className="px-2 py-8 md:px-28 flex-col">
+    <div className="">
+      <div className="flex px-2 py-8 md:px-28 flex-col">
         <div className="flex flex-1 flex-col mb-16">
           <h2 className="font-semibold text-lg text-gray-600 uppercase">
             Insights

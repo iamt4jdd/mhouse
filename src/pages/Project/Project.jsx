@@ -9,7 +9,7 @@ const Project = () => {
   const { projectId } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3002/project/${projectId}`).then((res) => {
+    axios.get(`https://mhouse-api.onrender.com/project/${projectId}`).then((res) => {
       setProject(res.data);
       // console.log(res.data)
     });
@@ -36,7 +36,7 @@ const Project = () => {
           <div className='flex flex-1 flex-col md:flex-row mt-12'>
             <div className="flex flex-col justify-center md:w-[800px] md:h-[700px]">
               <img
-                src={`http://localhost:3002/public/assets/${project.imagePath}`}
+                src={`https://mhouse-api.onrender.com/public/assets/${project.imagePath}`}
                 alt={project.title}
                 className="h-full w-full"
               />

@@ -20,7 +20,7 @@ const AllProjects = () => {
 
 
     axios
-    .get(`http://localhost:3002/project/`)
+    .get(`https://mhouse-api.onrender.com/project/`)
     .then((res) => {
       setProjectList(res.data);
     })
@@ -70,7 +70,7 @@ const AllProjects = () => {
               to={`/project/${item._id}`}
             >
               <ContentRenderer
-                image={`http://localhost:3002/public/assets/${item.imagePath}`}
+                image={`https://mhouse-api.onrender.com/public/assets/${item.imagePath}`}
                 article={item.article}
                 title={item.title}
                 area={item.area}
