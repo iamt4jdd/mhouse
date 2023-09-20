@@ -25,10 +25,9 @@ const Contact = () => {
                 <div className='min-w-full min-h-full flex flex-1 flex-col sm:flex-row'>
                     <ContentCol>
                         <h1 className='w-full mt-0'>CONTACT US</h1>
-                        <p className='leading-6 my-6'>
-                            Lorem ipsum <strong>"dolor sit amet"</strong> adipiscing elit. Praesent finibus lacus erat
-                            <span className="text-amber-500"> Sed</span> scelerisque eleifend est, vitae euismod metus convallis vitae. 
-                            Suspendisse eget ipsum nec dui accumsan consectetur. 
+                        <p className='leading-6 my-6'>                   
+                            If you have any <strong>questions</strong> or need <strong>assistance</strong>, <br />feel free to reach out
+                            to us. <span className="text-amber-500">We're here to help</span>!
                         </p>
                         <p className='my-6'>
                             <span className="text-amber-500 ">MHouse <strong className='uppercase text-black'>Building Company</strong></span>

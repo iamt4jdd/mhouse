@@ -24,7 +24,7 @@ const Items = [
 const HomestayItem = memo(({ item, index }) => {
   return (
     <li className='' key={index}>
-      <img src={item.image} alt={`Building ${index}`} className='h-[400px] w-full mb-6' loading='lazy'/>
+      <img src={item.image} alt={`Building ${index}`} className='h-[500px] w-full mb-6' loading='lazy'/>
       <h3 className='mb-4 md:mb-0 font-bold text-2xl text-center'>{item.title}</h3>
     </li>
   );

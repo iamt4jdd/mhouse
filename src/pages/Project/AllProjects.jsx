@@ -1,90 +1,34 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 
 import { InnerContainer, ContentRenderer, Button, PostProject } from "~/components";
-import images from "~/assets/images";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const projectItems = [
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "News release",
-    area: "Atlanta, GA",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "Editorial",
-    area: "Atlanta, AZ",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "Event",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "News release",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "Editorial",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "In the News",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "News release",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "Editorial",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-  {
-    title: "MHouse Completes Largest Public Port Project on Texas Coast",
-    image: images.Building1,
-    article: "Event",
-    area: "Atlanta, KS",
-    content: "asdasdasdsahfsjkdflghsldkfhgdskfghsdklfghsdklfgd",
-  },
-];
 
+const AllProjects = () => {
 
-
-
-const Project = () => {
-
+  const [projectList, setProjectList] = useState([])
+  
   const [access, setAccess] = useState(false)
   const [password, setPassword] = useState('')
   const [showForm, setShowForm] = useState(false)
 
   useEffect(() => {
+
+
+    axios
+    .get(`http://localhost:3002/project/`)
+    .then((res) => {
+      setProjectList(res.data);
+    })
+
+
+
     const handleEsc = (event) => {
-        if (event.keyCode === 27) { // 27 is the keyCode for "Esc"
+        if (event.keyCode === 27) { 
           setAccess(false)  
           setShowForm(false)
         }
@@ -120,15 +64,19 @@ const Project = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
-          {projectItems.map((item, index) => (
-            <ContentRenderer
-              key={index}
-              image={item.image}
-              article={item.article}
-              title={item.title}
-              area={item.area}
-              type="primary"
-            />
+          {projectList.map((item) => (
+            <Link
+              key={item._id}
+              to={`/project/${item._id}`}
+            >
+              <ContentRenderer
+                image={`http://localhost:3002/public/assets/${item.imagePath}`}
+                article={item.article}
+                title={item.title}
+                area={item.area}
+                type="primary"
+              />
+            </Link>
           ))}
         </div>
       </InnerContainer>
@@ -149,7 +97,7 @@ const Project = () => {
         <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center z-[999] px-10 sm:p-28 bg-blur'>
           <div className=' flex flex-col items-center bg-white w-96 h-40 sm:h-36 p-4 rounded-sm'>
             <form>
-                <p className='text-center uppercase font-semibold text-sm mb-2'>You must enter password to post project</p>
+                <p className='text-center uppercase font-semibold text-sm mb-2'>You must enter password to upload project</p>
                 <input
                   className="border-2 border-sky-500 w-full rounded h-10 mb-2 p-2"
                   type="text"
@@ -180,4 +128,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default AllProjects;
