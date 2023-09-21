@@ -66,7 +66,7 @@ const Home = () => {
                                     we deliver certainty by focusing on what matters to you.
                                 </p>
                                 <div className='my-10 sm:mt-10 flex'>
-                                    <Button to='/services' className='hover-add-swipe' type='primary-non-border'>Our Services</Button>
+                                    <Button to='/services/home-stay-design' className='hover-add-swipe' type='primary-non-border'>Our Services</Button>
                                 </div>
                             </div>
                         </div>
@@ -112,42 +112,42 @@ const Home = () => {
                                 image: images.Building1,
                                 area: "News release",
                                 content:
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a ante ac ipsum feugiat varius ut sit amet neque. Quisque eleifend pharetra lectus ac eleifend. ",
+                                    "MHouse, a renowned construction firm, achieves a milestone with the completion of Texas Coast's largest public port project. This feat solidifies their reputation for excellence in maritime infrastructure. ",
                                 },
                                 {
                                 title: "Challenges and Opportunities of Water in Houston",
                                 image: images.Building2,
                                 area: "News release",
                                 content:
-                                    "Fusce iaculis magna sit amet nisi tempor, a hendrerit tortor malesuada. Integer eget dolor eu felis sollicitudin commodo finibus eget felis.",
+                                    "Houston grapples with water scarcity, aging infrastructure. Innovation, conservation crucial. Investment in sustainable solutions promises a resilient, thriving future.",
                                 },
                                 {
                                 title: "MHouse Completes Barbours Cut Terminal Container Yard 3N",
                                 image: images.Building3,
                                 area: "Insights",
                                 content:
-                                    "Etiam lobortis ligula et ultrices blandit. Nulla mattis ligula ut tortor euismod, eget posuere tortor dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra",
+                                    "MHouse triumphs with the successful completion of Barbours Cut Terminal Container Yard 3N, bolstering Texas' maritime capabilities and efficiency.",
                                 },
                                 {
                                 title: "MHouse Awarded Texas Port Construction Contracts",
                                 image: images.Building4,
                                 area: "News release",
                                 content:
-                                    "Vivamus semper elementum quam, sed maximus dolor interdum in. Integer rutrum iaculis felis eu accumsan.",
+                                    "MHouse secures pivotal port construction contracts in Texas, fortifying their position as leaders in maritime infrastructure development and innovation.",
                                 },
                                 {
                                 title: "New Craft Workforce Center in Chandler, Ariz. Unveiled",
                                 image: images.Building5,
                                 area: "News release",
                                 content:
-                                    "In hac habitasse platea dictumst. Per inceptos himenaeos. Etiam ac fringilla ex.",
+                                    "Chandler, Arizona welcomes a state-of-the-art Craft Workforce Center, boosting vocational training and skills development for the region's workforce.",
                                 },
                                 {
                                 title: "MHouse Designed and Constructed Building in Chandler",
                                 image: images.Building6,
                                 area: "News release",
                                 content:
-                                    "Donec porta ligula varius ex facilisis pulvinar. Quisque id vulputate leo, id interdum erat. Vivamus sapien dolor, tempus nec turpis vitae, egestas dapibus quam.",
+                                    "MHouse excels with the design and construction of a cutting-edge building in Chandler, showcasing their expertise in architectural innovation.",
                                 },
                             ]}
                         />
