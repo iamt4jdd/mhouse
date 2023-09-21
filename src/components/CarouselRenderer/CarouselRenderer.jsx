@@ -11,23 +11,19 @@ const CAROUSEL_ITEM = [
     {
         title: 'Building 1',
         image: images.Building18,
-        slogan: 'Interior Construction'
     },
     {
         title: 'Building 2',
         image: images.Building19,
-        slogan: 'Renovate Building'
     },
     {
         title: 'Building 3',
         image: images.Building20,
-        slogan: 'ádasdasdasd'
     },
     {
         title: 'Building 4',
         image: images.Building21,
-        slogan: 'dfgdfgdgdfgdfgdf'
-    },
+    }
 ]
 
 
