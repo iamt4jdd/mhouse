@@ -41,7 +41,7 @@ const Project = () => {
                 className="h-full w-full"
               />
             </div>
-            <div className="bg-brownBlack md:w-[720px] h-[350px] md:h-[600px] py-4 sm:py-0 md:my-12">
+            <div className="bg-brownBlack md:w-[720px] md:h-[600px] py-4 sm:py-0 md:my-12">
               <div className="sm:relative sm:right-24 px-2 sm:px-20 sm:py-16 md:py-32 flex flex-col bg-brownBlack w-full h-full">
                 <p className="text-gray-300 leading-6 text-lg tracking-wide mt-8">
                   {project.content}
