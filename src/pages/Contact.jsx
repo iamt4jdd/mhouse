@@ -36,10 +36,10 @@ const Contact = () => {
                             <span className='text-gray-400'><span className='text-lime-600'>|</span> Address: <span className='text-black'>Ho Chi Minh City</span></span><br />
                         </p>
                         <p className='my-6'>
-                            <span className='text-gray-400'><span className='text-lime-600'>|</span> Hotline/Zalo: <strong className='text-black'>0359894512</strong></span><br />
+                            <span className='text-gray-400'><span className='text-lime-600'>|</span> Hotline/Zalo: <strong className='text-black'>0983446228</strong></span><br />
                         </p>
                         <p className='my-6'>
-                            <span className='text-gray-400'><span className='text-lime-600'>|</span> Email: <span className='text-black'>Test1234@gmail.com</span></span>
+                            <span className='text-gray-400'><span className='text-lime-600'>|</span> Email: <span className='text-black'>mmhouse.contact@gmail.com</span></span>
                         </p>
                     </ContentCol>
                     <ContentCol>

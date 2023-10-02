@@ -92,8 +92,8 @@ const FooterMain = () => {
                             <span><span className='text-amber-500'>MHouse</span> Building Company</span><br />
                             <span>Address: <span>Ho Chi Minh City</span></span><br />
                             <br /><br />
-                            <span>Tel/Zalo: <span>0359894512</span></span><br />
-                            <span>Email: <span>Test1234@gmail.com</span></span>
+                            <span>Tel/Zalo: <span>0983446228</span></span><br />
+                            <span>Email: <span>mmhouse.contact@gmail.com</span></span>
                         </p>
                     </ContentContainer>
                     <ContentContainer title='Connect with us' icon={IconRenderer()} className='flex-grow'/>
